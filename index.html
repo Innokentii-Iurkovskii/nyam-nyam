@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Нам-Ням</title>
+	<meta name="description" content="Доставка обедов в офис">
+  <meta name="keywords" content="доставка, еда, обеды, офис">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./images/favicon.png">
+	<meta property="og:image" content="./images/preview.jpg">
+	<link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__nav">
+      <div class="header__box-nav box">
+        <!-- Десктоп навигация -->
+        <nav class="header__nav-links">
+          <ul class="header__nav-list list">
+            <li class="header__nav-item">
+              <a href="/company/" class="header__nav-link link">Компания</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/blog/" class="header__nav-link link">Блог</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/bonus/" class="header__nav-link link">Бонусная программа</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/delivery/" class="header__nav-link link">Доставка</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/catering/" class="header__nav-link link">Организация питания</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/reviews/" class="header__nav-link link">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/contacts/" class="header__nav-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Конец десктоп навигации -->
+        <!-- Десктоп социальные сети -->
+        <ul class="socials header__socials list">
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/telegram.svg" alt="Телеграм" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/skype.svg" alt="Скайп" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/mail.svg" alt="Почта" class="socials__icon">
+            </a>
+          </li>
+        </ul>
+        <!-- Конец социальных сетей -->
+        <!-- Десктоп профиль -->
+        <a href="#" class="header__login link">
+          <img class="header__login-icon" src="./images/profile.svg" alt="Личный кабинет">
+          <span class="header__login-text">Профиль</span>
+        </a>
+        <!-- Конец десктоп профиля -->
+      </div>
+    </div>
+    <div class="header__info">
+      <div class="box header__box-info">
+        <button type="button" class="header__burger button">
+          <img src="./images/burger.svg" alt="Открыть мобильное меню" class="header__burger-icon">
+        </button>
+        <a href="/" class="header__logo logo link">
+          <img src="./images/logo.svg" alt="Логотип Нам-Ням" class="header__logo-img logo__img">
+          <h2 class="header__logo-title title">
+            Доставка обедов в офис
+          </h2>
+        </a>
+        <div class="header__info-delicious">
+          <img src="./images/delicious-at-home.svg" alt="Вкусно по домашнему" class="header__info-delicious-img">
+          <p class="header__info-delicious-text">Вкусно по‑домашнему!</p>
+        </div>
+        <!-- Десктоп контакты -->
+        <div class="header__contacts">
+          <a href="tel:+74993946490" class="header__phone link">+7 499 394-64-90</a>
+          <span class="header__phone-separator">/</span>
+          <a href="tel:+79037750565" class="header__phone link">+7 903 775-05-65</a>
+          <a href="#" class="header__call-me-back link">Перезвоните мне</a>
+          <p class="header__schedule">пн-вс с 10:00 до 18:00</p>
+        </div>
+        <!-- Конец десктоп контактов -->
+        <!-- Мобильный профиль -->
+        <a href="#" class="header__login header__login_type_mobile link">
+          <img class="header__login-icon" src="./images/profile.svg" alt="Личный кабинет">
+        </a>
+        <!-- Конец мобильного профиля -->
+        <a href="/cart/" class="header__cart link">
+          <img src="./images/basket.svg" alt="Корзина" class="header__cart-img">
+          <span class="header__cart-value">
+            <span class="header__cart-count">3</span><span class="header__cart-separator"> / </span><span class="header__cart-price">3200р.</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="header__menu">
+      <button class="header__close-button button">
+        <img class="header__close-icon" src="./images/mobile-menu-close.svg" alt="Закрыть мобильное меню">
+      </button>
+      <div class="header__menu-box box">
+        <nav class="header__menu-links">
+          <ul class="header__menu-list list">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">
+                <img src="./images/main-menu.svg" alt="Основное меню" class="header__menu-icon">
+                <span class="header__menu-text">Основное меню</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">
+                <img src="./images/business-lunch.svg" alt="Бизнес-ланчи" class="header__menu-icon">
+                <span class="header__menu-text">Бизнес-ланчи</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">
+                <img src="./images/set-meals.svg" alt="Комплексные обеды" class="header__menu-icon">
+                <span class="header__menu-text">Комплексные обеды</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">
+                <img src="./images/holiday-menu.svg" alt="Праздничное меню" class="header__menu-icon">
+                <span class="header__menu-text">Праздничное меню</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">
+                <img src="./images/wholesalers-catalog.svg" alt="Каталог оптовика" class="header__menu-icon">
+                <span class="header__menu-text">Каталог оптовика</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Мобильная навигация -->
+        <nav class="header__nav-links">
+          <ul class="header__nav-list list">
+            <li class="header__nav-item">
+              <a href="/company/" class="header__nav-link link">Компания</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/blog/" class="header__nav-link link">Блог</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/bonus/" class="header__nav-link link">Бонусная программа</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/delivery/" class="header__nav-link link">Доставка</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/catering/" class="header__nav-link link">Организация питания</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/reviews/" class="header__nav-link link">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/contacts/" class="header__nav-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Конец мобильной навигации -->
+        </div>
+        <div class="header__wrapper">
+          <!-- Мобильные контакты -->
+          <div class="header__contacts">
+            <a href="tel:+74993946490" class="header__phone link">+7 499 394-64-90</a>
+            <a href="tel:+79037750565" class="header__phone link">+7 903 775-05-65</a>
+            <a href="#" class="header__call-me-back link">Перезвоните мне</a>
+            <p class="header__schedule">пн-вс с 10:00 до 18:00</p>
+          </div>
+          <!-- Конец мобильных контактов -->
+          <!-- Мобильные социальные сети -->
+          <ul class="socials header__socials list">
+            <li class="socials__item">
+              <a href="#" class="socials__link link">
+                <img src="./images/telegram.svg" alt="Телеграм" class="socials__icon">
+                <span class="socials__text">Telegram</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link link">
+                <img src="./images/skype.svg" alt="Скайп" class="socials__icon">
+                <span class="socials__text">Skype</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link link">
+                <img src="./images/mail.svg" alt="Почта" class="socials__icon">
+                <span class="socials__text">E-mail</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Конец мобильных социальных сетей -->
+          </div>
+    </div>
+  </header>
+  <main class="content">
+    <section class="main-banner slider-box">
+      <div class="swiper slider main-banner__slider">
+        <div class="swiper-wrapper slider__wrapper">
+          <div class="swiper-slide slider__slide">
+            <div style="background-image: url(./images/borsch-2.jpg);" class="main-banner__content">
+              <div class="box box__slider">
+                <h2 class="main-banner__title title">
+                  <span class="main-banner__accent">Вкусно</span> по-домашнему
+                </h2>
+                <p class="main-banner__text">
+                  Наши продукты богаты витаминами и микроэлементами!
+                  Все очень вкусно, натурально, полезно и безопасно!
+                  Мы очень внимательны к качеству наших блюд!
+                </p>
+                <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <div style="background-image: url(./images/borsch.jpg);" class="main-banner__content">
+              <div class="box box__slider">
+                <h2 class="main-banner__title title">
+                  <span class="main-banner__accent">Заказывайте</span> обеды за бонусы
+                </h2>
+                <p class="main-banner__text">
+                  Оплачивайте до 50% стоимости заказа с бонусного счета!
+                </p>
+                <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <div style="background-image: url(./images/borsch-2.jpg);" class="main-banner__content">
+              <div class="box box__slider">
+                <h2 class="main-banner__title title">
+                  <span class="main-banner__accent">Вкусно</span> по-домашнему
+                </h2>
+                <p class="main-banner__text">
+                  Наши продукты богаты витаминами и микроэлементами!
+                  Все очень вкусно, натурально, полезно и безопасно!
+                  Мы очень внимательны к качеству наших блюд!
+                </p>
+                <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <div style="background-image: url(./images/borsch.jpg);" class="main-banner__content">
+              <div class="box box__slider">
+                <h2 class="main-banner__title title">
+                  <span class="main-banner__accent">Заказывайте</span> обеды за бонусы
+                </h2>
+                <p class="main-banner__text">
+                  Оплачивайте до 50% стоимости заказа с бонусного счета!
+                </p>
+                <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination slider__pagination"></div>
+      </div>
+      <div class="box main-banner__slider-navigation-wrapper">
+        <div class="slider__button slider__button-prev">
+          <svg class="slider__button-icon slider__button-prev-icon" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"  preserveAspectRatio="none" fill="none"><g fill="#CBD3D9" clip-path="url(#a)"><path d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z"/><path d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M50 0v50H0V0z"/></clipPath></defs></svg>
+        </div>
+        <div class="slider__button slider__button-next">
+          <svg class="slider__button-icon slider__button-next-icon" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"  preserveAspectRatio="none" fill="none"><g fill="#CBD3D9" clip-path="url(#a)"><path d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z"/><path d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M50 0v50H0V0z"/></clipPath></defs></svg>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="box footer__box">
+        <div class="footer__top-info">
+          <div class="footer__contacts">
+            <a href="tel:+74993946490" class="footer__phone link">+7 499 394-64-90</a>
+            <a href="tel:+79037750565" class="footer__phone link">+7 903 775-05-65</a>
+            <p class="footer__schedule">пн-вс с 10:00 до 18:00</p>
+            <a href="mailto:catering@nam-nyam.ru" class="footer__mail link">catering@nam-nyam.ru</a>
+          </div>
+          <ul class="socials footer__socials list">
+            <li class="socials__item">
+              <a href="#" class="socials__link link">
+                <img src="./images/telegram.svg" alt="Телеграм" class="socials__icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link link">
+                <img src="./images/skype.svg" alt="Скайп" class="socials__icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link link">
+                <img src="./images/mail.svg" alt="Почта" class="socials__icon">
+              </a>
+            </li>
+          </ul>
+          <div class="footer__slider-wrapper slider-box">
+            <div class="swiper slider footer__slider">
+              <div class="swiper-wrapper slider__wrapper">
+                <div class="swiper-slide slider__slide">
+                  <span class="footer__address">
+                    <span>Адрес:</span>
+                    109202, г. Москва, шоссе Фрезер, д. 17А, стр. 5 (м. Авиамоторная)
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="footer__address">
+                    <span>Адрес:</span>
+                    109202, г. Москва, шоссе Фрезер, д. 17А, стр. 5 (м. Авиамоторная)
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__button slider__button_size_small slider__button-prev">
+              <svg class="slider__button-icon slider__button-prev-icon" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"  preserveAspectRatio="none" fill="none"><g fill="#CBD3D9" clip-path="url(#a)"><path d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z"/><path d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M50 0v50H0V0z"/></clipPath></defs></svg>
+            </div>
+            <div class="slider__button slider__button_size_small slider__button-next">
+              <svg class="slider__button-icon slider__button-next-icon" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"  preserveAspectRatio="none" fill="none"><g fill="#CBD3D9" clip-path="url(#a)"><path d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z"/><path d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M50 0v50H0V0z"/></clipPath></defs></svg>
+            </div>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <h3 class="footer__title">Каталог продукции</h3>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Багеты и бургеры</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Блины с начинками</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Сэндвичи</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Кулинария в упаковке</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Весовые салаты</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Выпечка в групповой упаковке</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Завтраки</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Готовые вторые блюда</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Салаты 300 г</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Салаты и закуски</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Штучная выпечка</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <h3 class="footer__title">Каталог продукции</h3>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Багеты и бургеры</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Блины с начинками</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Сэндвичи</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Кулинария в упаковке</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Весовые салаты</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Выпечка в групповой упаковке</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Завтраки</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Готовые вторые блюда</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Салаты и закуски</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__info">
+          <ul class="footer__pay-list list">
+            <li class="footer__pay-item">
+              <img src="./images/yandex.svg" alt="Яндекс деньги" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/visa.svg" alt="Виза" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/master-card.svg" alt="Мастер Кард" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/maestro.svg" alt="Маестро" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/sberbank-icon.svg" alt="Сбербанк" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/qiwi.svg" alt="Киви" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/robokassa.svg" alt="Робокасса" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/mir.svg" alt="Мир" class="footer__pay-icon">
+            </li>
+          </ul>
+          <form action="#" name="subscribe-form" class="footer__form form">
+            <input type="email" placeholder="Ваш e-mail" class="footer__input form__input">
+            <input type="submit" value="Подписаться" class="footer__button button button_size_small">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="box footer__box">
+      <div class="footer__bot">
+        <a href="/" class="footer__logo logo link">
+          <img src="./images/logo-footer.svg" alt="Логотип Нам-Ням" class="footer__logo-img logo__img">
+          <p class="footer__logo-text">
+            2004–2022 © «Нам-Ням» Доставка обедов в офис
+          </p>
+        </a>
+        <ul class="footer__bot-list list">
+          <li class="footer__bot-item">
+            <a href="#" class="footer__bot-link link">Стандарты качества</a>
+          </li>
+          <li class="footer__bot-item">
+            <a href="#" class="footer__bot-link link">Политика конфеденциальности</a>
+          </li>
+          <li class="footer__bot-item">
+            <a href="#" class="footer__bot-link link">Политика возврата</a>
+          </li>
+        </ul>
+        <ul class="socials footer__bot-socials list">
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/vk.svg" alt="ВКонтакте" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/youtube.svg" alt="Ютуб" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/ok.svg" alt="Одноклассники" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/instagram.svg" alt="Инстаграм" class="socials__icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="#" class="up-button link">
+      <img src="./images/arrow-up.svg" alt="Наверх" class="up-icon">
+      <span class="up-text">Наверх</span>
+    </a>
+  </footer>
+  <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+  <script src="./vendor/magnific-popup/jquery.magnific-popup.js"></script>
+  <script src="./vendor/swiper/swiper.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

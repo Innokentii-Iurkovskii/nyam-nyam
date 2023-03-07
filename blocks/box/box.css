@@ -1,0 +1,25 @@
+.box {
+  max-width: 1200px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.box__slider {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1450px) {
+  .box__slider {
+    padding: 0 82px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+  .box__slider {
+    padding: 0 55px;
+  }
+}

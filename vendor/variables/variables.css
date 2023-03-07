@@ -1,0 +1,23 @@
+:root {
+	--text-color: #151716;
+	--regular-text: 16px;
+	--lineheight: 1.3;
+	--userfont: Circe, Arial, sans-serif;
+  --titlefont: Circe Rounded Alt, Arial, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --default-color: #FFFFFF;
+  --default-darker-color: #F3F6F8;
+  --default-darker-color-second: #6F6F6F;
+  --accent-color: #79C500;
+  --accent-color-hover: #669B11;
+  --accent-darker-color: #68A30A;
+  --accent-color-second: #F9AA00;
+}
+
+@media screen and (max-width: 1279px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}

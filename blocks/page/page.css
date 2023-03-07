@@ -1,0 +1,16 @@
+.page {
+  font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text-color);
+	min-width: 320px;
+	position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.page_fixed {
+  overflow: hidden;
+}
