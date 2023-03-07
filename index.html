@@ -2,25 +2,26 @@
 <html lang="ru">
 
 <head>
-	<meta charset="utf-8">
-	<title>Нам-Ням</title>
-	<meta name="description" content="Доставка обедов в офис">
+  <meta charset="utf-8">
+  <title>Нам-Ням</title>
+  <meta name="description" content="Доставка обедов в офис">
   <meta name="keywords" content="доставка, еда, обеды, офис">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="./images/favicon.png">
-	<meta property="og:image" content="./images/preview.jpg">
-	<link rel="stylesheet" href="./styles/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon.png">
+  <meta property="og:image" content="./images/preview.jpg">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body class="page">
-  <header class="header">
+  <!-- Хедер -->
+  <header class="header" id="header">
     <div class="header__nav">
       <div class="header__box-nav box">
         <!-- Десктоп навигация -->
         <nav class="header__nav-links">
           <ul class="header__nav-list list">
             <li class="header__nav-item">
-              <a href="/company/" class="header__nav-link link">Компания</a>
+              <a href="/company/" class="header__nav-link header__nav-link_active link">Компания</a>
             </li>
             <li class="header__nav-item">
               <a href="/blog/" class="header__nav-link link">Блог</a>
@@ -115,7 +116,7 @@
         <nav class="header__menu-links">
           <ul class="header__menu-list list">
             <li class="header__menu-item">
-              <a href="#" class="header__menu-link link">
+              <a href="#" class="header__menu-link header__menu-link_active link">
                 <img src="./images/main-menu.svg" alt="Основное меню" class="header__menu-icon">
                 <span class="header__menu-text">Основное меню</span>
               </a>
@@ -208,7 +209,11 @@
           </div>
     </div>
   </header>
+  <!-- Конец хедера -->
+
+  <!-- Контент страницы -->
   <main class="content">
+    <!-- Баннер -->
     <section class="main-banner slider-box">
       <div class="swiper slider main-banner__slider">
         <div class="swiper-wrapper slider__wrapper">
@@ -280,7 +285,170 @@
         </div>
       </div>
     </section>
+    <!-- Конец баннера -->
+
+    <!-- Доставка обедов -->
+    <section class="delivery section">
+      <div class="box">
+        <h1 class="title title_type_default delivery__title">Доставка обедов</h1>
+        <ul class="delivery__list list">
+          <li class="delivery-card" style="background-image: url(./images/set-meals.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Комплексные обеды</h3>
+                <p class="delivery-card__value">от 195 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/breakfast.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Завтраки</h3>
+                <p class="delivery-card__value">от 52 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/first-course.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Первые блюда</h3>
+                <p class="delivery-card__value">от 84 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/second-course.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Вторые блюда</h3>
+                <p class="delivery-card__value">от 90 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/salads-and-snacks.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Салаты и закуски</h3>
+                <p class="delivery-card__value">от 69 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/side-dishes.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Гарниры</h3>
+                <p class="delivery-card__value">от 55 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/pancakes.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Блины</h3>
+                <p class="delivery-card__value">от 69 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/rolls.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Роллы</h3>
+                <p class="delivery-card__value">от 116 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/sandwiches.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Сэндвичи</h3>
+                <p class="delivery-card__value">от 116 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/bakery-products.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Выпечка</h3>
+                <p class="delivery-card__value">от 41 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/drinks.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Напитки</h3>
+                <p class="delivery-card__value">от 36 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/business-lunches.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Бизнес-Ланчи</h3>
+                <p class="delivery-card__value">от 174 руб.</p>
+              </div>
+            </a>
+          </li>
+          <li class="delivery-card" style="background-image: url(./images/holiday-dishes.jpg);">
+            <a href="#" class="delivery-card__link link">
+              <div class="delivery-card__info">
+                <h3 class="delivery-card__name title title_type_small">Праздничные блюда</h3>
+                <p class="delivery-card__value">от 174 руб.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Конец доставки обедов -->
+
+    <!-- Как сделать заказ -->
+    <section class="how section section_type_accent">
+      <div class="box">
+        <h2 class="title title_type_default how__title">Как сделать заказ</h2>
+        <ol class="how__list list">
+          <li class="how__item">
+            <a class="how__link link">
+              <img src="./images/delivery-date.svg" alt="Дата доставки" class="how__icon">
+              <h3 class="how__title title title_type_small">Выберите дату доставки</h3>
+              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной программе.</p>
+            </a>
+          </li>
+          <li class="how__item">
+            <a class="how__link link">
+              <img src="./images/dish-selection.svg" alt="Выберите блюда" class="how__icon">
+              <h3 class="how__title title title_type_small">Выберете блюда или обеды</h3>
+              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной программе.</p>
+            </a>
+          </li>
+          <li class="how__item">
+            <a class="how__link link">
+              <img src="./images/authorization.svg" alt="Авторизуйтесь" class="how__icon">
+              <h3 class="how__title title title_type_small">Авторизуйтесь или зарегистрируйтесь на сайте</h3>
+              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной программе.</p>
+            </a>
+          </li>
+          <li class="how__item">
+            <a class="how__link link">
+              <img src="./images/order-confirmation.svg" alt="Подтверждение заказа" class="how__icon">
+              <h3 class="how__title title title_type_small">Подтверждение заказа</h3>
+              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной программе.</p>
+            </a>
+          </li>
+          <li class="how__item">
+            <a class="how__link link">
+              <img src="./images/food-delivery.svg" alt="Готовим и доставляем" class="how__icon">
+              <h3 class="how__title title title_type_small">Мы готовим и доставляем еду!</h3>
+              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной программе.</p>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- Конец как сделать заказ -->
   </main>
+  <!-- Конец контента страницы -->
+
+  <!-- Футер -->
   <footer class="footer">
     <div class="footer__top">
       <div class="box footer__box">
@@ -480,11 +648,12 @@
         </ul>
       </div>
     </div>
-    <a href="#" class="up-button link">
+    <a href="#header" class="up-button link">
       <img src="./images/arrow-up.svg" alt="Наверх" class="up-icon">
       <span class="up-text">Наверх</span>
     </a>
   </footer>
+  <!-- Конец футера -->
   <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
   <script src="./vendor/magnific-popup/jquery.magnific-popup.js"></script>
   <script src="./vendor/swiper/swiper.js"></script>

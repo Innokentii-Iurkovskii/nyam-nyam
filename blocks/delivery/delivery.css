@@ -1,0 +1,8 @@
+.delivery__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+  grid-auto-rows: minmax(360px, 1fr); */
+  gap: var(--gap);
+}

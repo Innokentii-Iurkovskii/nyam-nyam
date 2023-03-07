@@ -4,3 +4,36 @@
   margin: 0;
   padding: 0;
 }
+
+.title_type_default {
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.title_type_small {
+  font-size: 18px;
+  font-family: var(--userfont);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 1279px) {
+  .title_type_default {
+    margin-bottom: 45px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .title_type_default {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  
+  .title_type_small {
+    font-size: 14px;
+  }
+}
