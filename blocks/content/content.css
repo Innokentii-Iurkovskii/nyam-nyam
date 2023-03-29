@@ -1,3 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  position: relative;
 }

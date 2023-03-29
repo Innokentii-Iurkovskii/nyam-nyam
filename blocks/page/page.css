@@ -1,11 +1,23 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .page {
   font-family: var(--userfont);
-	font-size: var(--regular-text);
-	line-height: var(--lineheight);
-	color: var(--text-color);
-	min-width: 320px;
-	position: relative;
+  font-size: var(--regular-text);
+  line-height: var(--lineheight);
+  color: var(--text-color);
+  min-width: 320px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
 }
@@ -13,4 +25,14 @@
 
 .page_fixed {
   overflow: hidden;
+}
+
+.page_type_dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }

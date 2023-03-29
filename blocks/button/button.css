@@ -1,14 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .button {
   all: unset;
   cursor: pointer;
+  -webkit-transition: background-color .2s ease-in-out;
+  -o-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
   background-color: var(--accent-color);
   border-radius: 8px;
   text-align: center;
   color: var(--default-color);
   text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
   max-width: max-content;
   display: inline-block;
+}
+
+.button.link:hover {
+  opacity: 1;
 }
 
 .button_size_small {
@@ -22,14 +37,10 @@
   padding: 18px 34px 19px;
   position: relative;
   z-index: 1;
+  -webkit-box-shadow: 0px 20px 15px -10px rgb(87 140 4);
   box-shadow: 0px 20px 15px -10px rgb(87 140 4);
 }
 
 .button:hover {
   background-color: var(--accent-color-hover);
-}
-
-.button:focus {
-  outline: auto 2px Highlight;
-  outline: auto 5px -webkit-focus-ring-color;
 }

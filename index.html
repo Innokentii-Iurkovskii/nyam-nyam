@@ -21,7 +21,9 @@
         <nav class="header__nav-links">
           <ul class="header__nav-list list">
             <li class="header__nav-item">
+              <!-- Ссылка с классом .header__nav-link_active указывающий на текущую страницу -->
               <a href="/company/" class="header__nav-link header__nav-link_active link">Компания</a>
+              <!-- Конец ссылки с классом .header__nav-link_active указывающий на текущую страницу -->
             </li>
             <li class="header__nav-item">
               <a href="/blog/" class="header__nav-link link">Блог</a>
@@ -100,10 +102,11 @@
           <img class="header__login-icon" src="./images/profile.svg" alt="Личный кабинет">
         </a>
         <!-- Конец мобильного профиля -->
-        <a href="/cart/" class="header__cart link">
+        <a href="#basket-popup" class="header__cart link">
           <img src="./images/basket.svg" alt="Корзина" class="header__cart-img">
           <span class="header__cart-value">
-            <span class="header__cart-count">3</span><span class="header__cart-separator"> / </span><span class="header__cart-price">3200р.</span>
+            <span class="header__cart-count">3</span><span class="header__cart-separator"> / </span><span
+              class="header__cart-price">3200р.</span>
           </span>
         </a>
       </div>
@@ -116,10 +119,12 @@
         <nav class="header__menu-links">
           <ul class="header__menu-list list">
             <li class="header__menu-item">
+              <!-- Ссылка с классом .header__menu-link_active указывающий на текущую страницу -->
               <a href="#" class="header__menu-link header__menu-link_active link">
                 <img src="./images/main-menu.svg" alt="Основное меню" class="header__menu-icon">
                 <span class="header__menu-text">Основное меню</span>
               </a>
+              <!-- Конец ссылки с классом .header__menu-link_active указывающий на текущую страницу -->
             </li>
             <li class="header__menu-item">
               <a href="#" class="header__menu-link link">
@@ -174,39 +179,39 @@
           </ul>
         </nav>
         <!-- Конец мобильной навигации -->
+      </div>
+      <div class="header__wrapper">
+        <!-- Мобильные контакты -->
+        <div class="header__contacts">
+          <a href="tel:+74993946490" class="header__phone link">+7 499 394-64-90</a>
+          <a href="tel:+79037750565" class="header__phone link">+7 903 775-05-65</a>
+          <a href="#" class="header__call-me-back link">Перезвоните мне</a>
+          <p class="header__schedule">пн-вс с 10:00 до 18:00</p>
         </div>
-        <div class="header__wrapper">
-          <!-- Мобильные контакты -->
-          <div class="header__contacts">
-            <a href="tel:+74993946490" class="header__phone link">+7 499 394-64-90</a>
-            <a href="tel:+79037750565" class="header__phone link">+7 903 775-05-65</a>
-            <a href="#" class="header__call-me-back link">Перезвоните мне</a>
-            <p class="header__schedule">пн-вс с 10:00 до 18:00</p>
-          </div>
-          <!-- Конец мобильных контактов -->
-          <!-- Мобильные социальные сети -->
-          <ul class="socials header__socials list">
-            <li class="socials__item">
-              <a href="#" class="socials__link link">
-                <img src="./images/telegram.svg" alt="Телеграм" class="socials__icon">
-                <span class="socials__text">Telegram</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link link">
-                <img src="./images/skype.svg" alt="Скайп" class="socials__icon">
-                <span class="socials__text">Skype</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link link">
-                <img src="./images/mail.svg" alt="Почта" class="socials__icon">
-                <span class="socials__text">E-mail</span>
-              </a>
-            </li>
-          </ul>
-          <!-- Конец мобильных социальных сетей -->
-          </div>
+        <!-- Конец мобильных контактов -->
+        <!-- Мобильные социальные сети -->
+        <ul class="socials header__socials list">
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/telegram.svg" alt="Телеграм" class="socials__icon">
+              <span class="socials__text">Telegram</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/skype.svg" alt="Скайп" class="socials__icon">
+              <span class="socials__text">Skype</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/mail.svg" alt="Почта" class="socials__icon">
+              <span class="socials__text">E-mail</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Конец мобильных социальных сетей -->
+      </div>
     </div>
   </header>
   <!-- Конец хедера -->
@@ -219,57 +224,65 @@
         <div class="swiper-wrapper slider__wrapper">
           <div class="swiper-slide slider__slide">
             <div style="background-image: url(./images/borsch-2.jpg);" class="main-banner__content">
-              <div class="box box__slider">
-                <h2 class="main-banner__title title">
-                  <span class="main-banner__accent">Вкусно</span> по-домашнему
-                </h2>
-                <p class="main-banner__text">
-                  Наши продукты богаты витаминами и микроэлементами!
-                  Все очень вкусно, натурально, полезно и безопасно!
-                  Мы очень внимательны к качеству наших блюд!
-                </p>
-                <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+              <div class="box">
+                <div class="box__slider">
+                  <h2 class="main-banner__title title">
+                    <span class="main-banner__accent">Вкусно</span> по-домашнему
+                  </h2>
+                  <p class="main-banner__text">
+                    Наши продукты богаты витаминами и микроэлементами!
+                    Все очень вкусно, натурально, полезно и безопасно!
+                    Мы очень внимательны к качеству наших блюд!
+                  </p>
+                  <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide slider__slide">
             <div style="background-image: url(./images/borsch.jpg);" class="main-banner__content">
-              <div class="box box__slider">
-                <h2 class="main-banner__title title">
-                  <span class="main-banner__accent">Заказывайте</span> обеды за бонусы
-                </h2>
-                <p class="main-banner__text">
-                  Оплачивайте до 50% стоимости заказа с бонусного счета!
-                </p>
-                <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+              <div class="box">
+                <div class="box__slider">
+                  <h2 class="main-banner__title title">
+                    <span class="main-banner__accent">Заказывайте</span> обеды за бонусы
+                  </h2>
+                  <p class="main-banner__text">
+                    Оплачивайте до 50% стоимости заказа с бонусного счета!
+                  </p>
+                  <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide slider__slide">
             <div style="background-image: url(./images/borsch-2.jpg);" class="main-banner__content">
-              <div class="box box__slider">
-                <h2 class="main-banner__title title">
-                  <span class="main-banner__accent">Вкусно</span> по-домашнему
-                </h2>
-                <p class="main-banner__text">
-                  Наши продукты богаты витаминами и микроэлементами!
-                  Все очень вкусно, натурально, полезно и безопасно!
-                  Мы очень внимательны к качеству наших блюд!
-                </p>
-                <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+              <div class="box">
+                <div class="box__slider">
+                  <h2 class="main-banner__title title">
+                    <span class="main-banner__accent">Вкусно</span> по-домашнему
+                  </h2>
+                  <p class="main-banner__text">
+                    Наши продукты богаты витаминами и микроэлементами!
+                    Все очень вкусно, натурально, полезно и безопасно!
+                    Мы очень внимательны к качеству наших блюд!
+                  </p>
+                  <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+                </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide slider__slide">
             <div style="background-image: url(./images/borsch.jpg);" class="main-banner__content">
-              <div class="box box__slider">
-                <h2 class="main-banner__title title">
-                  <span class="main-banner__accent">Заказывайте</span> обеды за бонусы
-                </h2>
-                <p class="main-banner__text">
-                  Оплачивайте до 50% стоимости заказа с бонусного счета!
-                </p>
-                <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+              <div class="box">
+                <div class="box__slider">
+                  <h2 class="main-banner__title title">
+                    <span class="main-banner__accent">Заказывайте</span> обеды за бонусы
+                  </h2>
+                  <p class="main-banner__text">
+                    Оплачивайте до 50% стоимости заказа с бонусного счета!
+                  </p>
+                  <a href="#" class="main-banner__button button button_size_medium">Подробнее</a>
+                </div>
               </div>
             </div>
           </div>
@@ -277,11 +290,39 @@
         <div class="swiper-pagination slider__pagination"></div>
       </div>
       <div class="box main-banner__slider-navigation-wrapper">
-        <div class="slider__button slider__button-prev">
-          <svg class="slider__button-icon slider__button-prev-icon" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"  preserveAspectRatio="none" fill="none"><g fill="#CBD3D9" clip-path="url(#a)"><path d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z"/><path d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M50 0v50H0V0z"/></clipPath></defs></svg>
-        </div>
-        <div class="slider__button slider__button-next">
-          <svg class="slider__button-icon slider__button-next-icon" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"  preserveAspectRatio="none" fill="none"><g fill="#CBD3D9" clip-path="url(#a)"><path d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z"/><path d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M50 0v50H0V0z"/></clipPath></defs></svg>
+        <div class="slider-box">
+          <div class="slider__button slider__button-prev">
+            <svg class="slider__button-icon slider__button-prev-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+              width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+              <g fill="#CBD3D9" clip-path="url(#a)">
+                <path
+                  d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                <path
+                  d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+              </g>
+              <defs>
+                <clipPath>
+                  <path fill="#fff" d="M50 0v50H0V0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="slider__button slider__button-next">
+            <svg class="slider__button-icon slider__button-next-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+              width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+              <g fill="#CBD3D9" clip-path="url(#a)">
+                <path
+                  d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                <path
+                  d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+              </g>
+              <defs>
+                <clipPath>
+                  <path fill="#fff" d="M50 0v50H0V0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
@@ -410,41 +451,875 @@
             <a class="how__link link">
               <img src="./images/delivery-date.svg" alt="Дата доставки" class="how__icon">
               <h3 class="how__title title title_type_small">Выберите дату доставки</h3>
-              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной программе.</p>
+              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной
+                программе.</p>
             </a>
           </li>
           <li class="how__item">
             <a class="how__link link">
               <img src="./images/dish-selection.svg" alt="Выберите блюда" class="how__icon">
               <h3 class="how__title title title_type_small">Выберете блюда или обеды</h3>
-              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной программе.</p>
+              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной
+                программе.</p>
             </a>
           </li>
           <li class="how__item">
             <a class="how__link link">
               <img src="./images/authorization.svg" alt="Авторизуйтесь" class="how__icon">
               <h3 class="how__title title title_type_small">Авторизуйтесь или зарегистрируйтесь на сайте</h3>
-              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной программе.</p>
+              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной
+                программе.</p>
             </a>
           </li>
           <li class="how__item">
             <a class="how__link link">
               <img src="./images/order-confirmation.svg" alt="Подтверждение заказа" class="how__icon">
               <h3 class="how__title title title_type_small">Подтверждение заказа</h3>
-              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной программе.</p>
+              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной
+                программе.</p>
             </a>
           </li>
           <li class="how__item">
             <a class="how__link link">
               <img src="./images/food-delivery.svg" alt="Готовим и доставляем" class="how__icon">
               <h3 class="how__title title title_type_small">Мы готовим и доставляем еду!</h3>
-              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной программе.</p>
+              <p class="how__text">Мы дарим 1000 бонусов после первого заказа, 1 бонус = 1 рубль, подробнее о бонусной
+                программе.</p>
             </a>
           </li>
         </ol>
       </div>
     </section>
     <!-- Конец как сделать заказ -->
+
+    <!-- Хиты продаж -->
+    <section class="hits section">
+      <div class="box">
+        <h2 class="title title_type_default">Хиты продаж</h2>
+        <ul class="cards-list list">
+          <li class="card">
+            <div class="card__detail">
+              <img src="./images/pancakes-without-filling.jpg" alt="Блины без начинки" class="card__image">
+              <a href="#card-popup" class="card__link link">
+                <span class="card__link-text button button_size_small">Подробнее</span>
+              </a>
+            </div>
+            <div class="card__info">
+              <h3 class="card__name title title_type_small">Блины без начинки</h3>
+              <ul class="card__tags-list list">
+                <li class="card__tag">
+                  <img src="./images/card-icon-new.svg" alt="Новинка" class="card__tag-icon">
+                  <span class="card__tag-text">Новинка</span>
+                </li>
+                <li class="card__tag">
+                  <img src="./images/card-icon-popular.svg" alt="Популярное" class="card__tag-icon">
+                  <span class="card__tag-text">Популярное</span>
+                </li>
+              </ul>
+              <!-- Избранное с классом active -->
+              <button type="button" class="card__like card__like_active button"></button>
+              <!-- Конец избранного с классом active -->
+              <p class="card__composition">Состав: мука в/с, молоко, масло подсолнечное, яйцо, сахар, соль</p>
+              <p class="card__weight">250 г.</p>
+              <p class="card__calories">89 ккал</p>
+              <p class="card__cpfc">КБЖУ: 270/32/46/16</p>
+              <p class="card__price">65 руб.</p>
+              <div class="order card__order-container">
+                <div class="order__quantity-container card__quantity-container">
+                  <button type="button" class="order__minus card__minus button"></button>
+                  <input type="number" min="0" max="999" class="order__quantity card__quantity" value="0">
+                  <button type="button" class="order__plus card__plus button"></button>
+                </div>
+                <button type="button" class="order__basket card__basket button button_size_small">
+                  <span class="order__basket-text card__basket-text">Заказать</span>
+                  <img src="./images/card-basket.svg" alt="Добавить в корзину"
+                    class="order__basket-icon card__basket-icon">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__detail">
+              <img src="./images/pancakes-with-chicken.jpg" alt="Блины с курицей" class="card__image">
+              <a href="#card-popup" class="card__link link">
+                <span class="card__link-text button button_size_small">Подробнее</span>
+              </a>
+            </div>
+            <div class="card__info">
+              <h3 class="card__name title title_type_small">Блины с курицей (упак.3шт.)</h3>
+              <ul class="card__tags-list list">
+                <li class="card__tag">
+                  <img src="./images/card-icon-new.svg" alt="Новинка" class="card__tag-icon">
+                  <span class="card__tag-text">Новинка</span>
+                </li>
+                <li class="card__tag">
+                  <img src="./images/card-icon-popular.svg" alt="Популярное" class="card__tag-icon">
+                  <span class="card__tag-text">Популярное</span>
+                </li>
+              </ul>
+              <button type="button" class="card__like button"></button>
+              <p class="card__composition">Состав: мука в/с, молоко, масло подсолнечное, яйцо, сахар, соль</p>
+              <p class="card__weight">210 г.</p>
+              <p class="card__calories">89 ккал</p>
+              <p class="card__cpfc">КБЖУ: 270/32/46/16</p>
+              <p class="card__price">121 руб.</p>
+              <div class="order card__order-container">
+                <div class="order__quantity-container card__quantity-container">
+                  <button type="button" class="order__minus card__minus button"></button>
+                  <input type="number" min="0" max="999" class="order__quantity card__quantity" value="0">
+                  <button type="button" class="order__plus card__plus button"></button>
+                </div>
+                <button type="button" class="order__basket card__basket button button_size_small">
+                  <span class="order__basket-text card__basket-text">Заказать</span>
+                  <img src="./images/card-basket.svg" alt="Добавить в корзину"
+                    class="order__basket-icon card__basket-icon">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__detail">
+              <img src="./images/pancakes-with-meat.jpg" alt="Блинчики с мясом" class="card__image">
+              <a href="#card-popup" class="card__link link">
+                <span class="card__link-text button button_size_small">Подробнее</span>
+              </a>
+            </div>
+            <div class="card__info">
+              <h3 class="card__name title title_type_small">Блинчики с мясом (упак.3шт.)</h3>
+              <ul class="card__tags-list list">
+                <li class="card__tag">
+                  <img src="./images/card-icon-new.svg" alt="Новинка" class="card__tag-icon">
+                  <span class="card__tag-text">Новинка</span>
+                </li>
+                <li class="card__tag">
+                  <img src="./images/card-icon-popular.svg" alt="Популярное" class="card__tag-icon">
+                  <span class="card__tag-text">Популярное</span>
+                </li>
+              </ul>
+              <button type="button" class="card__like button"></button>
+              <p class="card__composition">Состав: мука в/с, молоко, масло подсолнечное, яйцо, сахар, соль</p>
+              <p class="card__weight">210 г.</p>
+              <p class="card__calories">89 ккал</p>
+              <p class="card__cpfc">КБЖУ: 270/32/46/16</p>
+              <p class="card__price">133 руб.</p>
+              <div class="order card__order-container">
+                <div class="order__quantity-container card__quantity-container">
+                  <button type="button" class="order__minus card__minus button"></button>
+                  <input type="number" min="0" max="999" class="order__quantity card__quantity" value="0">
+                  <button type="button" class="order__plus card__plus button"></button>
+                </div>
+                <button type="button" class="order__basket card__basket button button_size_small">
+                  <span class="order__basket-text card__basket-text">Заказать</span>
+                  <img src="./images/card-basket.svg" alt="Добавить в корзину"
+                    class="order__basket-icon card__basket-icon">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__detail">
+              <img src="./images/turkey-sous-vide.jpg" alt="Индейка" class="card__image">
+              <a href="#card-popup" class="card__link link">
+                <span class="card__link-text button button_size_small">Подробнее</span>
+              </a>
+            </div>
+            <div class="card__info">
+              <h3 class="card__name title title_type_small">Индейка "Су-вид"</h3>
+              <ul class="card__tags-list list">
+                <li class="card__tag">
+                  <img src="./images/card-icon-new.svg" alt="Новинка" class="card__tag-icon">
+                  <span class="card__tag-text">Новинка</span>
+                </li>
+                <li class="card__tag">
+                  <img src="./images/card-icon-popular.svg" alt="Популярное" class="card__tag-icon">
+                  <span class="card__tag-text">Популярное</span>
+                </li>
+              </ul>
+              <button type="button" class="card__like button"></button>
+              <p class="card__composition">Состав: мука в/с, молоко, масло подсолнечное, яйцо, сахар, соль</p>
+              <p class="card__weight">200 г.</p>
+              <p class="card__calories">89 ккал</p>
+              <p class="card__cpfc">КБЖУ: 270/32/46/16</p>
+              <p class="card__price">185 руб.</p>
+              <div class="order card__order-container">
+                <div class="order__quantity-container card__quantity-container">
+                  <button type="button" class="order__minus card__minus button"></button>
+                  <input type="number" min="0" max="999" class="order__quantity card__quantity" value="0">
+                  <button type="button" class="order__plus card__plus button"></button>
+                </div>
+                <button type="button" class="order__basket card__basket button button_size_small">
+                  <span class="order__basket-text card__basket-text">Заказать</span>
+                  <img src="./images/card-basket.svg" alt="Добавить в корзину"
+                    class="order__basket-icon card__basket-icon">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__detail">
+              <img src="./images/ural-dumplings.jpg" alt="Пельмени" class="card__image">
+              <a href="#card-popup" class="card__link link">
+                <span class="card__link-text button button_size_small">Подробнее</span>
+              </a>
+            </div>
+            <div class="card__info">
+              <h3 class="card__name title title_type_small">Пельмени "Уральские" из курицы и говядины</h3>
+              <ul class="card__tags-list list">
+                <li class="card__tag">
+                  <img src="./images/card-icon-new.svg" alt="Новинка" class="card__tag-icon">
+                  <span class="card__tag-text">Новинка</span>
+                </li>
+                <li class="card__tag">
+                  <img src="./images/card-icon-popular.svg" alt="Популярное" class="card__tag-icon">
+                  <span class="card__tag-text">Популярное</span>
+                </li>
+              </ul>
+              <button type="button" class="card__like button"></button>
+              <p class="card__composition">Состав: мука в/с, молоко, масло подсолнечное, яйцо, сахар, соль</p>
+              <p class="card__weight">250 г.</p>
+              <p class="card__calories">89 ккал</p>
+              <p class="card__cpfc">КБЖУ: 270/32/46/16</p>
+              <p class="card__price">144 руб.</p>
+              <div class="order card__order-container">
+                <div class="order__quantity-container card__quantity-container">
+                  <button type="button" class="order__minus card__minus button"></button>
+                  <input type="number" min="0" max="999" class="order__quantity card__quantity" value="0">
+                  <button type="button" class="order__plus card__plus button"></button>
+                </div>
+                <button type="button" class="order__basket card__basket button button_size_small">
+                  <span class="order__basket-text card__basket-text">Заказать</span>
+                  <img src="./images/card-basket.svg" alt="Добавить в корзину"
+                    class="order__basket-icon card__basket-icon">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__detail">
+              <img src="./images/samsa-with-meat.jpg" alt="Самса" class="card__image">
+              <a href="#card-popup" class="card__link link">
+                <span class="card__link-text button button_size_small">Подробнее</span>
+              </a>
+            </div>
+            <div class="card__info">
+              <h3 class="card__name title title_type_small">Самса с мясом (упак. 3 шт.)</h3>
+              <ul class="card__tags-list list">
+                <li class="card__tag">
+                  <img src="./images/card-icon-new.svg" alt="Новинка" class="card__tag-icon">
+                  <span class="card__tag-text">Новинка</span>
+                </li>
+                <li class="card__tag">
+                  <img src="./images/card-icon-popular.svg" alt="Популярное" class="card__tag-icon">
+                  <span class="card__tag-text">Популярное</span>
+                </li>
+              </ul>
+              <button type="button" class="card__like button"></button>
+              <p class="card__composition">Состав: мука в/с, молоко, масло подсолнечное, яйцо, сахар, соль</p>
+              <p class="card__weight">225 г.</p>
+              <p class="card__calories">89 ккал</p>
+              <p class="card__cpfc">КБЖУ: 270/32/46/16</p>
+              <p class="card__price">138 руб.</p>
+              <div class="order card__order-container">
+                <div class="order__quantity-container card__quantity-container">
+                  <button type="button" class="order__minus card__minus button"></button>
+                  <input type="number" min="0" max="999" class="order__quantity card__quantity" value="0">
+                  <button type="button" class="order__plus card__plus button"></button>
+                </div>
+                <button type="button" class="order__basket card__basket button button_size_small">
+                  <span class="order__basket-text card__basket-text">Заказать</span>
+                  <img src="./images/card-basket.svg" alt="Добавить в корзину"
+                    class="order__basket-icon card__basket-icon">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__detail">
+              <img src="./images/ham-sandwich.jpg" alt="Бутерброд с бужениной" class="card__image">
+              <a href="#card-popup" class="card__link link">
+                <span class="card__link-text button button_size_small">Подробнее</span>
+              </a>
+            </div>
+            <div class="card__info">
+              <h3 class="card__name title title_type_small">Бутерброд с бужениной</h3>
+              <ul class="card__tags-list list">
+                <li class="card__tag">
+                  <img src="./images/card-icon-new.svg" alt="Новинка" class="card__tag-icon">
+                  <span class="card__tag-text">Новинка</span>
+                </li>
+                <li class="card__tag">
+                  <img src="./images/card-icon-popular.svg" alt="Популярное" class="card__tag-icon">
+                  <span class="card__tag-text">Популярное</span>
+                </li>
+              </ul>
+              <button type="button" class="card__like button"></button>
+              <p class="card__composition">Состав: мука в/с, молоко, масло подсолнечное, яйцо, сахар, соль</p>
+              <p class="card__weight">170 г.</p>
+              <p class="card__calories">89 ккал</p>
+              <p class="card__cpfc">КБЖУ: 270/32/46/16</p>
+              <p class="card__price">127 руб.</p>
+              <div class="order card__order-container">
+                <div class="order__quantity-container card__quantity-container">
+                  <button type="button" class="order__minus card__minus button"></button>
+                  <input type="number" min="0" max="999" class="order__quantity card__quantity" value="0">
+                  <button type="button" class="order__plus card__plus button"></button>
+                </div>
+                <button type="button" class="order__basket card__basket button button_size_small">
+                  <span class="order__basket-text card__basket-text">Заказать</span>
+                  <img src="./images/card-basket.svg" alt="Добавить в корзину"
+                    class="order__basket-icon card__basket-icon">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__detail">
+              <img src="./images/ham-rolls.jpg" alt="Рулетики ветчинные" class="card__image">
+              <a href="#card-popup" class="card__link link">
+                <span class="card__link-text button button_size_small">Подробнее</span>
+              </a>
+            </div>
+            <div class="card__info">
+              <h3 class="card__name title title_type_small">Рулетики ветчинные</h3>
+              <ul class="card__tags-list list">
+                <li class="card__tag">
+                  <img src="./images/card-icon-new.svg" alt="Новинка" class="card__tag-icon">
+                  <span class="card__tag-text">Новинка</span>
+                </li>
+                <li class="card__tag">
+                  <img src="./images/card-icon-popular.svg" alt="Популярное" class="card__tag-icon">
+                  <span class="card__tag-text">Популярное</span>
+                </li>
+              </ul>
+              <button type="button" class="card__like button"></button>
+              <p class="card__composition">Состав: мука в/с, молоко, масло подсолнечное, яйцо, сахар, соль</p>
+              <p class="card__weight">150 г.</p>
+              <p class="card__calories">89 ккал</p>
+              <p class="card__cpfc">КБЖУ: 270/32/46/16</p>
+              <p class="card__price">110 руб.</p>
+              <div class="order card__order-container">
+                <div class="order__quantity-container card__quantity-container">
+                  <button type="button" class="order__minus card__minus button"></button>
+                  <input type="number" min="0" max="999" class="order__quantity card__quantity" value="0">
+                  <button type="button" class="order__plus card__plus button"></button>
+                </div>
+                <button type="button" class="order__basket card__basket button button_size_small">
+                  <span class="order__basket-text card__basket-text">Заказать</span>
+                  <img src="./images/card-basket.svg" alt="Добавить в корзину"
+                    class="order__basket-icon card__basket-icon">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__detail">
+              <img src="./images/burger.jpg" alt="Бургер" class="card__image">
+              <a href="#card-popup" class="card__link link">
+                <span class="card__link-text button button_size_small">Подробнее</span>
+              </a>
+            </div>
+            <div class="card__info">
+              <h3 class="card__name title title_type_small">Бургер с пастрами из свинины</h3>
+              <ul class="card__tags-list list">
+                <li class="card__tag">
+                  <img src="./images/card-icon-new.svg" alt="Новинка" class="card__tag-icon">
+                  <span class="card__tag-text">Новинка</span>
+                </li>
+                <li class="card__tag">
+                  <img src="./images/card-icon-popular.svg" alt="Популярное" class="card__tag-icon">
+                  <span class="card__tag-text">Популярное</span>
+                </li>
+              </ul>
+              <button type="button" class="card__like button"></button>
+              <p class="card__composition">Состав: мука в/с, молоко, масло подсолнечное, яйцо, сахар, соль</p>
+              <p class="card__weight">170 г.</p>
+              <p class="card__calories">89 ккал</p>
+              <p class="card__cpfc">КБЖУ: 270/32/46/16</p>
+              <p class="card__price">126 руб.</p>
+              <div class="order card__order-container">
+                <div class="order__quantity-container card__quantity-container">
+                  <button type="button" class="order__minus card__minus button"></button>
+                  <input type="number" min="0" max="999" class="order__quantity card__quantity" value="0">
+                  <button type="button" class="order__plus card__plus button"></button>
+                </div>
+                <button type="button" class="order__basket card__basket button button_size_small">
+                  <span class="order__basket-text card__basket-text">Заказать</span>
+                  <img src="./images/card-basket.svg" alt="Добавить в корзину"
+                    class="order__basket-icon card__basket-icon">
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__detail">
+              <img src="./images/caesar-salad.jpg" alt="Салат 'Цезарь'" class="card__image">
+              <a href="#card-popup" class="card__link link">
+                <span class="card__link-text button button_size_small">Подробнее</span>
+              </a>
+            </div>
+            <div class="card__info">
+              <h3 class="card__name title title_type_small">Салат "Цезарь" (ПРЕМИУМ)</h3>
+              <ul class="card__tags-list list">
+                <li class="card__tag">
+                  <img src="./images/card-icon-new.svg" alt="Новинка" class="card__tag-icon">
+                  <span class="card__tag-text">Новинка</span>
+                </li>
+                <li class="card__tag">
+                  <img src="./images/card-icon-popular.svg" alt="Популярное" class="card__tag-icon">
+                  <span class="card__tag-text">Популярное</span>
+                </li>
+              </ul>
+              <button type="button" class="card__like button"></button>
+              <p class="card__composition">Состав: мука в/с, молоко, масло подсолнечное, яйцо, сахар, соль</p>
+              <p class="card__weight">180 г.</p>
+              <p class="card__calories">89 ккал</p>
+              <p class="card__cpfc">КБЖУ: 270/32/46/16</p>
+              <p class="card__price">207 руб.</p>
+              <div class="order card__order-container">
+                <div class="order__quantity-container card__quantity-container">
+                  <button type="button" class="order__minus card__minus button"></button>
+                  <input type="number" min="0" max="999" class="order__quantity card__quantity" value="0">
+                  <button type="button" class="order__plus card__plus button"></button>
+                </div>
+                <button type="button" class="order__basket card__basket button button_size_small">
+                  <span class="order__basket-text card__basket-text">Заказать</span>
+                  <img src="./images/card-basket.svg" alt="Добавить в корзину"
+                    class="order__basket-icon card__basket-icon">
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="hits__button button button_size_medium">Все блюда</a>
+      </div>
+    </section>
+    <!-- Конец хитов продаж -->
+
+    <!-- Преимущества -->
+    <section class="advantages section section_type_accent">
+      <div class="box">
+        <h2 class="title title_type_default">Преимущества компании Нам-Ням</h2>
+        <ul class="advantages__list list">
+          <li class="advantages__item">
+            <img src="./images/quality.jpg" alt="Качество" class="advantages__image">
+            <h3 class="advantages__title title title_type_small">Качество, проверенное временем!</h3>
+            <p class="advantages__text">Уже более 20 лет мы занимаемся доставкой вкусной еды.</p>
+          </li>
+          <li class="advantages__item">
+            <img src="./images/trust-us.jpg" alt="Нам доверяют" class="advantages__image">
+            <h3 class="advantages__title title title_type_small">Нам доверяют</h3>
+            <p class="advantages__text">Более 25 000 постоянных клиентов ежедневно.</p>
+          </li>
+          <li class="advantages__item">
+            <img src="./images/own-delivery.jpg" alt="Своя служба доставки" class="advantages__image">
+            <h3 class="advantages__title title title_type_small">Своя служба доставки</h3>
+            <p class="advantages__text">Автопарк состоит из более чем 30 специализированных автомобилей.</p>
+          </li>
+          <li class="advantages__item">
+            <img src="./images/food-safety.jpg" alt="Пищевая безопасность" class="advantages__image">
+            <h3 class="advantages__title title title_type_small">Система пищевой безопасности</h3>
+            <p class="advantages__text">Контроль качества на всех этапах производственного процесса.</p>
+          </li>
+          <li class="advantages__item">
+            <img src="./images/bonus-program.jpg" alt="Бонусы" class="advantages__image">
+            <h3 class="advantages__title title title_type_small">Бонусная программа</h3>
+            <p class="advantages__text">Получайте 5% от стоимости на счет в личном кабинете + 1.5% на День Рождения.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Конец преимуществ -->
+
+    <!-- О Компании -->
+    <section class="about section">
+      <div class="box about__box">
+        <div class="about__video-box">
+          <iframe class="about__video" src="https://www.youtube-nocookie.com/embed/X8ztj9ilK8w?controls=0"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="about__info">
+          <h2 class="about__title title title_type_default">О компании</h2>
+          <p class="about__text">
+            Мы работаем более 20 лет. За эти годы компания заработала добрую репутацию среди самых взыскательных
+            покупателей и
+            предлагает широкий ассортимент из более чем 100 видов салатов, кулинарных изделий из рыбы и мяса, более 70
+            наименований выпечки и т. д. Обед всегда будет полноценным.
+          </p>
+          <a href="#" class="about__button link button button_size_medium">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <!-- Конец о Компании -->
+
+    <!-- Блог-слайдер -->
+    <section class="blog-main section">
+      <div class="box">
+        <h2 class="blog-main__title-top title title_type_default">Блог</h2>
+        <div class="blog-main__slider-wrapper slider-box">
+          <ul class="blog-main__filter list">
+            <li class="blog-main__item">
+              <!-- Для работы фильтра надо вешать класс .blog-main__link_active, вешается через клик -->
+              <a data-filter=".filter1" class="blog-main__link link">статьи</a>
+              <!-- Конец для работы фильтра надо вешать класс .blog-main__link_active, вешается через клик -->
+            </li>
+            <li class="blog-main__item swiper-slide">
+              <a data-filter=".filter2" class="blog-main__link link">рецепты</a>
+            </li>
+            <li class="blog-main__item swiper-slide">
+              <a data-filter=".filter3" class="blog-main__link link">Фото блог</a>
+            </li>
+            <li class="blog-main__item swiper-slide">
+              <a data-filter=".filter4" class="blog-main__link link">Видео</a>
+            </li>
+          </ul>
+          <div class="box__slider">
+            <div class="blog-main__slider swiper slider">
+              <div class="swiper-wrapper slider__wrapper">
+                <div class="swiper-slide slider__slide filter1">
+                  <div class="blog-main__box">
+                    <img src="./images/how-choose-food.jpg" alt="Как выбрать еду" class="blog-main__image">
+                    <h3 class="blog-main__title title title_type_small">Как выбрать еду на день</h3>
+                    <p class="blog-main__text">
+                      Готовая еда на день из готовых блюд — это отличное решение для тех, кто не привык тратить время на
+                      приготовление пищи. Готовые блюда заказанные на день всегда свежие и вкусные.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide filter1">
+                  <div class="blog-main__box">
+                    <img src="./images/how-cook.jpg" alt="Как готовят еду" class="blog-main__image">
+                    <h3 class="blog-main__title title title_type_small">Как готовят блюда компания Нам-Ням</h3>
+                    <p class="blog-main__text">
+                      Хотите узнать, как готовится ваш любимый обед, который вот-вот привезут на дом? Никаких тайн, если
+                      вы делаете заказ в компании "Нам-Ням"!
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide filter1">
+                  <div class="blog-main__box">
+                    <img src="./images/how-store-food.jpg" alt="Как хранить еду" class="blog-main__image">
+                    <h3 class="blog-main__title title title_type_small">Как хранить еду дома и при какой температуре
+                    </h3>
+                    <p class="blog-main__text">
+                      Для того, чтобы употреблять лишь здоровую пищу необходимо её правильно хранить, для этого важно
+                      знать температурный режим.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide filter1">
+                  <div class="blog-main__box">
+                    <img src="./images/how-choose-food.jpg" alt="Как выбрать еду" class="blog-main__image">
+                    <h3 class="blog-main__title title title_type_small">Как выбрать еду на день</h3>
+                    <p class="blog-main__text">
+                      Готовая еда на день из готовых блюд — это отличное решение для тех, кто не привык тратить время на
+                      приготовление пищи. Готовые блюда заказанные на день всегда свежие и вкусные.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide filter2">
+                  <div class="blog-main__box">
+                    <img src="./images/how-choose-food.jpg" alt="Как выбрать еду" class="blog-main__image">
+                    <h3 class="blog-main__title title title_type_small">Как выбрать еду на день Фильтр-2</h3>
+                    <p class="blog-main__text">
+                      Готовая еда на день из готовых блюд — это отличное решение для тех, кто не привык тратить время на
+                      приготовление пищи. Готовые блюда заказанные на день всегда свежие и вкусные.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide filter3">
+                  <div class="blog-main__box">
+                    <img src="./images/how-cook.jpg" alt="Как готовят еду" class="blog-main__image">
+                    <h3 class="blog-main__title title title_type_small">Как готовят блюда компания Нам-Ням Фильтр-3</h3>
+                    <p class="blog-main__text">
+                      Хотите узнать, как готовится ваш любимый обед, который вот-вот привезут на дом? Никаких тайн, если
+                      вы делаете заказ в компании "Нам-Ням"!
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide filter3">
+                  <div class="blog-main__box">
+                    <img src="./images/how-store-food.jpg" alt="Как хранить еду" class="blog-main__image">
+                    <h3 class="blog-main__title title title_type_small">Как хранить еду дома и при какой температуре
+                      Фильтр-3</h3>
+                    <p class="blog-main__text">
+                      Для того, чтобы употреблять лишь здоровую пищу необходимо её правильно хранить, для этого важно
+                      знать температурный режим.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide filter4">
+                  <div class="blog-main__box">
+                    <img src="./images/how-cook.jpg" alt="Как готовят еду" class="blog-main__image">
+                    <h3 class="blog-main__title title title_type_small">Как готовят блюда компания Нам-Ням Фильтр-4</h3>
+                    <p class="blog-main__text">
+                      Хотите узнать, как готовится ваш любимый обед, который вот-вот привезут на дом? Никаких тайн, если
+                      вы делаете заказ в компании "Нам-Ням"!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__button slider__button-prev">
+            <svg class="slider__button-icon slider__button-prev-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+              width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+              <g fill="#CBD3D9" clip-path="url(#a)">
+                <path
+                  d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                <path
+                  d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+              </g>
+              <defs>
+                <clipPath>
+                  <path fill="#fff" d="M50 0v50H0V0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="slider__button slider__button-next">
+            <svg class="slider__button-icon slider__button-next-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+              width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+              <g fill="#CBD3D9" clip-path="url(#a)">
+                <path
+                  d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                <path
+                  d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+              </g>
+              <defs>
+                <clipPath>
+                  <path fill="#fff" d="M50 0v50H0V0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <a href="#" class="blog-main__button link button button_size_medium">Все записи</a>
+      </div>
+    </section>
+    <!-- Конец блога-слайдер -->
+
+    <!-- Наши клиенты -->
+    <section class="clients section section_type_accent">
+      <div class="box">
+        <h2 class="clients__title title title_type_default">Наши клиенты</h2>
+        <div class="clients__slider-wrapper slider-box">
+          <div class="box__slider">
+            <div class="swiper slider clients__slider">
+              <div class="swiper-wrapper slider__wrapper">
+                <div class="swiper-slide slider__slide">
+                  <div class="clients__item">
+                    <img src="./images/ntv-logo.png" alt="Логотип НТВ" class="clients__logo">
+                    <h3 class="clients__name title title_type_small">Телекомпания «НТВ»</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="clients__item">
+                    <img src="./images/sberbank-logo.png" alt="Логотип Сбербанк" class="clients__logo">
+                    <h3 class="clients__name title title_type_small">Банк «Сбербанк»</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="clients__item">
+                    <img src="./images/mustv-logo.png" alt="Логотип Муз ТВ" class="clients__logo">
+                    <h3 class="clients__name title title_type_small">Телеканал «Муз ТВ»</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="clients__item">
+                    <img src="./images/rosatom-logo.png" alt="Логотип Росатом" class="clients__logo">
+                    <h3 class="clients__name title title_type_small">Корпорация по энергетике «Росатом»</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="clients__item">
+                    <img src="./images/mgu-logo.png" alt="Логотип МГУ" class="clients__logo">
+                    <h3 class="clients__name title title_type_small">МГУ им. Ломоносова</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="clients__item">
+                    <img src="./images/beethoven-logo.png" alt="Логотип зоомагазинов «Бетховен»" class="clients__logo">
+                    <h3 class="clients__name title title_type_small">Сеть зоомагазинов «Бетховен»</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="clients__item">
+                    <img src="./images/mgu-logo.png" alt="Логотип МГУ" class="clients__logo">
+                    <h3 class="clients__name title title_type_small">МГУ им. Ломоносова</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__button slider__button-prev">
+            <svg class="slider__button-icon slider__button-prev-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+              width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+              <g fill="#CBD3D9" clip-path="url(#a)">
+                <path
+                  d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                <path
+                  d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+              </g>
+              <defs>
+                <clipPath>
+                  <path fill="#fff" d="M50 0v50H0V0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="slider__button slider__button-next">
+            <svg class="slider__button-icon slider__button-next-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+              width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+              <g fill="#CBD3D9" clip-path="url(#a)">
+                <path
+                  d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                <path
+                  d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+              </g>
+              <defs>
+                <clipPath>
+                  <path fill="#fff" d="M50 0v50H0V0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Конец наши клиенты -->
+
+    <!-- Отзывы -->
+    <section class="feedback section">
+      <div class="box">
+        <h2 class="feedback__title title title_type_default">Отзывы</h2>
+        <div class="feedback__slider-wrapper slider-box">
+          <div class="box__slider">
+            <div class="swiper slider feedback__slider">
+              <div class="swiper-wrapper slider__wrapper">
+                <div class="swiper-slide slider__slide">
+                  <div class="feedback__item">
+                    <img src="./images/alpha-bank-logo.png" alt="Альфа Банк" class="feedback__logo">
+                    <h3 class="feedback__name title title_type_small">Банк «Альфа Банк»</h3>
+                    <div class="feedback__info">
+                      <p class="feedback__text">
+                        Готовая еда на день из готовых блюд — это отличное решение для тех, кто не привык тратить
+                        время на приготовление пищи. Готовые блюда заказанные на день всегда свежие и вкусные.
+                      </p>
+                      <a class="feedback__link link" href="./images/feedback.jpg">
+                        <img class="feedback__image" src="./images/feedback.jpg" alt="Иображение отзыва">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="feedback__item">
+                    <img src="./images/gazprom-logo.png" alt="Газпром" class="feedback__logo">
+                    <h3 class="feedback__name title title_type_small">Сеть АЗС «Газпром»</h3>
+                    <div class="feedback__info">
+                      <p class="feedback__text">
+                        Готовая еда на день из готовых блюд — это отличное решение для тех, кто не привык тратить
+                        время на приготовление пищи. Готовые блюда заказанные на день всегда свежие и вкусные.
+                      </p>
+                      <a class="feedback__link link" href="./images/feedback.jpg">
+                        <img class="feedback__image" src="./images/feedback.jpg" alt="Иображение отзыва">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="feedback__item">
+                    <img src="./images/bosch-logo.png" alt="Bosch" class="feedback__logo">
+                    <h3 class="feedback__name title title_type_small">Компания «Bosch»</h3>
+                    <div class="feedback__info">
+                      <p class="feedback__text">
+                        Готовая еда на день из готовых блюд — это отличное решение для тех, кто не привык тратить
+                        время на приготовление пищи. Готовые блюда заказанные на день всегда свежие и вкусные.
+                      </p>
+                      <a class="feedback__link link" href="./images/feedback.jpg">
+                        <img class="feedback__image" src="./images/feedback.jpg" alt="Иображение отзыва">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slider__slide">
+                  <div class="feedback__item">
+                    <img src="./images/gazprom-logo.png" alt="Газпром" class="feedback__logo">
+                    <h3 class="feedback__name title title_type_small">Сеть АЗС «Газпром»</h3>
+                    <div class="feedback__info">
+                      <p class="feedback__text">
+                        Готовая еда на день из готовых блюд — это отличное решение для тех, кто не привык тратить
+                        время на приготовление пищи. Готовые блюда заказанные на день всегда свежие и вкусные.
+                      </p>
+                      <a class="feedback__link link" href="./images/feedback.jpg">
+                        <img class="feedback__image" src="./images/feedback.jpg" alt="Иображение отзыва">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__button slider__button-prev">
+            <svg class="slider__button-icon slider__button-prev-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+              width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+              <g fill="#CBD3D9" clip-path="url(#a)">
+                <path
+                  d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                <path
+                  d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+              </g>
+              <defs>
+                <clipPath>
+                  <path fill="#fff" d="M50 0v50H0V0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="slider__button slider__button-next">
+            <svg class="slider__button-icon slider__button-next-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+              width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+              <g fill="#CBD3D9" clip-path="url(#a)">
+                <path
+                  d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                <path
+                  d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+              </g>
+              <defs>
+                <clipPath>
+                  <path fill="#fff" d="M50 0v50H0V0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <a href="#" class="feedback__button link button button_size_medium">Все отзывы</a>
+      </div>
+    </section>
+    <!-- Конец отзывов -->
+
+    <!-- Форма обратной связи -->
+    <section class="manager">
+      <div class="box">
+        <div class="manager__box">
+          <form action="#" name="manager-form" class="manager__form form">
+            <h2 class="manager__title title title_type_default">Связаться с менеджером</h2>
+            <input type="text" placeholder="Имя*" class="manager__input manager__input_type_name form__input" required>
+            <input type="tel" placeholder="Телефон*" class="manager__input  manager__input_type_phone form__input"
+              required>
+            <label class="manager__checkbox-wrapper">
+              <input type="checkbox" class="manager__input manager__input_type_checkbox form__input" required>
+              <span class="manager__checkbox-custom"></span>
+              <span class="manager__checkbox-text">Даю согласие на обработку моих персональных данных.</span>
+            </label>
+            <input type="submit" value="Отправить" class="manager__button button button_size_medium form__input">
+          </form>
+          <img src="./images/dishes-form.png" alt="Фоновое изображение формы" class="manager__image">
+        </div>
+      </div>
+    </section>
+    <!-- Конец формы обратной связи -->
   </main>
   <!-- Конец контента страницы -->
 
@@ -494,10 +1369,36 @@
               </div>
             </div>
             <div class="slider__button slider__button_size_small slider__button-prev">
-              <svg class="slider__button-icon slider__button-prev-icon" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"  preserveAspectRatio="none" fill="none"><g fill="#CBD3D9" clip-path="url(#a)"><path d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z"/><path d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M50 0v50H0V0z"/></clipPath></defs></svg>
+              <svg class="slider__button-icon slider__button-prev-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+                width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+                <g fill="#CBD3D9" clip-path="url(#a)">
+                  <path
+                    d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                  <path
+                    d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+                </g>
+                <defs>
+                  <clipPath>
+                    <path fill="#fff" d="M50 0v50H0V0z" />
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
             <div class="slider__button slider__button_size_small slider__button-next">
-              <svg class="slider__button-icon slider__button-next-icon" xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 50 50"  preserveAspectRatio="none" fill="none"><g fill="#CBD3D9" clip-path="url(#a)"><path d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z"/><path d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M50 0v50H0V0z"/></clipPath></defs></svg>
+              <svg class="slider__button-icon slider__button-next-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+                width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+                <g fill="#CBD3D9" clip-path="url(#a)">
+                  <path
+                    d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                  <path
+                    d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+                </g>
+                <defs>
+                  <clipPath>
+                    <path fill="#fff" d="M50 0v50H0V0z" />
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
           </div>
         </div>
@@ -654,9 +1555,165 @@
     </a>
   </footer>
   <!-- Конец футера -->
+
+  <!-- Попап корзины каталога -->
+  <div class="basket-popup catalog__basket mfp-hide" id="basket-popup">
+    <div class="basket-popup__info catalog__basket-info">
+      <div class="basket-popup__box catalog__basket-box">
+        <p class="basket-popup__date catalog__basket-date">Заказ на 13.04.2023</p>
+        <p class="basket-popup__time catalog__basket-time">Принимается до 17:00</p>
+      </div>
+    </div>
+    <div class="basket-popup__day catalog__basket-day">
+      <div class="basket-popup__box catalog__basket-box">
+        <button type="button"
+          class="basket-popup__arrow basket-popup__arrow_type_prev catalog__basket-arrow catalog__basket-arrow_type_prev button"></button>
+        <ul class="basket-popup__list catalog__basket-list list">
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">ПН</a>
+          </li>
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">ВТ</a>
+          </li>
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">СР</a>
+          </li>
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">ЧТ</a>
+          </li>
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">ПТ</a>
+          </li>
+          <!-- Активный элемент с классом .basket-popup__link_active -->
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link basket-popup__link_active catalog__basket-link link">СБ</a>
+          </li>
+          <!-- Конец активного элемента с классом .basket-popup__link_active -->
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">ВС</a>
+          </li>
+        </ul>
+        <button type="button"
+          class="basket-popup__arrow basket-popup__arrow_type_next catalog__basket-arrow catalog__basket-arrow_type_next button"></button>
+      </div>
+    </div>
+    <div class="basket-popup__products catalog__basket-products">
+      <div class="basket-popup__box catalog__basket-box">
+        <div class="basket-popup__product catalog__basket-product">
+          <p class="basket-popup__section-name basket-section-name">Комплексные обеды</p>
+          <ul class="basket-popup__product-list catalog__basket-product-list list">
+            <li class="basket-popup__product-item catalog__basket-product-item">
+              <div class="basket-popup__product-info catalog__basket-product-info">
+                <p class="basket-popup__product-name catalog__basket-product-name">Комплекс БК</p>
+                <button type="button"
+                  class="basket-popup__product-remove catalog__basket-product-remove button"></button>
+              </div>
+              <div class="order basket-popup__container catalog__basket-container">
+                <div
+                  class="order__quantity-container basket-popup__quantity-container catalog__basket-quantity-container">
+                  <button type="button" class="order__minus basket-popup__minus catalog__basket-minus button"></button>
+                  <input type="number" min="0" max="999"
+                    class="order__quantity basket-popup__quantity catalog__basket-quantity" value="0">
+                  <button type="button" class="order__plus basket-popup__plus catalog__basket-plus button"></button>
+                </div>
+                <p class="basket-popup__product-price catalog__basket-product-price">138 руб.</p>
+              </div>
+            </li>
+            <li class="basket-popup__product-item catalog__basket-product-item">
+              <div class="basket-popup__product-info catalog__basket-product-info">
+                <p class="basket-popup__product-name catalog__basket-product-name">Комплекс БВ</p>
+                <button type="button"
+                  class="basket-popup__product-remove catalog__basket-product-remove button"></button>
+              </div>
+              <div class="order basket-popup__container catalog__basket-container">
+                <div
+                  class="order__quantity-container basket-popup__quantity-container catalog__basket-quantity-container">
+                  <button type="button" class="order__minus basket-popup__minus catalog__basket-minus button"></button>
+                  <input type="number" min="0" max="999"
+                    class="order__quantity basket-popup__quantity catalog__basket-quantity" value="0">
+                  <button type="button" class="order__plus basket-popup__plus catalog__basket-plus button"></button>
+                </div>
+                <p class="basket-popup__product-price catalog__basket-product-price">283 руб.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="basket-popup__product catalog__basket-product">
+          <p class="basket-popup__section-name basket-section-name">Завтраки</p>
+          <ul class="basket-popup__product-list catalog__basket-product-list list">
+            <li class="basket-popup__product-item catalog__basket-product-item">
+              <div class="basket-popup__product-info catalog__basket-product-info">
+                <p class="basket-popup__product-name catalog__basket-product-name">Бутерброд с семгой</p>
+                <button type="button"
+                  class="basket-popup__product-remove catalog__basket-product-remove button"></button>
+              </div>
+              <div class="order basket-popup__container catalog__basket-container">
+                <div
+                  class="order__quantity-container basket-popup__quantity-container catalog__basket-quantity-container">
+                  <button type="button" class="order__minus basket-popup__minus catalog__basket-minus button"></button>
+                  <input type="number" min="0" max="999"
+                    class="order__quantity basket-popup__quantity catalog__basket-quantity" value="0">
+                  <button type="button" class="order__plus basket-popup__plus catalog__basket-plus button"></button>
+                </div>
+                <p class="basket-popup__product-price catalog__basket-product-price">250 руб.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="basket-popup__total catalog__basket-total">
+      <div class="basket-popup__box catalog__basket-box">
+        <p class="basket-popup__total-price catalog__basket-total-price">Сумма: 671 руб.</p>
+        <p class="basket-popup__total-required catalog__basket-total-required">До заказа: 329 руб.</p>
+        <p class="basket-popup__total-count catalog__basket-total-count">Кол-во блюд: 4</p>
+        <button type="button"
+          class="basket-popup__total-button catalog__basket-total-button button button_size_small">Оформить</button>
+      </div>
+    </div>
+  </div>
+  <!-- Конец попапа корзины каталога -->
+
+  <!-- Попап карточки товара -->
+  <div class="card-popup mfp-hide" id="card-popup">
+    <h2 class="card-popup__title title title_type_default">Чахохбили с курицей (130 гр)</h2>
+    <img src="./images/chakhokhbili.jpg" alt="Чахохбили" class="card-popup__image">
+    <ul class="card-popup__list list">
+      <li class="card-popup__item">
+        <span class="card-popup__property">Состав: </span>
+        <span class="card-popup__text">Курица, лук, морковь, помидоры, масло подсолнечное, соль, укроп, чеснок,
+          перец</span>
+      </li>
+      <li class="card-popup__item">
+        <span class="card-popup__property">Макро и микроэлементы: </span>
+        <span class="card-popup__text">Ca, Mg, Mn, Fe, Na, P, Zn</span>
+      </li>
+      <li class="card-popup__item">
+        <span class="card-popup__property">Витамины: </span>
+        <span class="card-popup__text">A, B1, B2, B6, B9, C, PP</span>
+      </li>
+      <li class="card-popup__item">
+        <span class="card-popup__property">Энергетическая ценность: </span>
+        <span class="card-popup__text">365 ккал; Жиры: 25.3, Белки: 29.4, Углеводы: 2.7</span>
+      </li>
+    </ul>
+    <div class="card-popup__order order">
+      <div class="order__quantity-container">
+        <button type="button" class="order__minus button"></button>
+        <input type="number" min="0" max="999" class="order__quantity" value="0">
+        <button type="button" class="order__plus button"></button>
+      </div>
+      <button type="button" class="order__basket button button_size_small">
+        <span class="order__basket-text">Заказать</span>
+      </button>
+    </div>
+  </div>
+  <!-- Конец попапа карточки товара -->
+
   <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
   <script src="./vendor/magnific-popup/jquery.magnific-popup.js"></script>
   <script src="./vendor/swiper/swiper.js"></script>
+  <script src="./vendor/calendar/calendar.js"></script>
   <script src="./scripts/index.js"></script>
 </body>
 

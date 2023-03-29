@@ -1,5 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .slider-box {
   position: relative;
+}
+
+.slider__slide {
+  height: auto;
 }
 
 .slider__button {
@@ -8,12 +19,16 @@
   width: 50px;
   height: 50px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
 }
 
 .slider__button .slider__button-icon g {
+  -webkit-transition: fill .2s ease-in-out;
+  -o-transition: fill .2s ease-in-out;
   transition: fill .2s ease-in-out;
 }
 
@@ -22,11 +37,11 @@
 }
 
 .slider__button-prev {
-  left: -75px;
+  left: -100px;
 }
 
 .slider__button-next {
-  right: -75px;
+  right: -100px;
 }
 
 .slider__button_size_small {
@@ -51,6 +66,8 @@
 }
 
 .slider__button-next-icon {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -58,7 +75,7 @@
   bottom: 40px !important;
 }
 
-.slider__pagination span{
+.slider__pagination span {
   background: var(--default-color) !important;
   opacity: 0.7 !important;
   width: 32px !important;
@@ -71,17 +88,7 @@
   opacity: 1 !important;
 }
 
-@media screen and (max-width: 1450px) {
-  .slider__button-prev {
-    left: 24px;
-  }
-  
-  .slider__button-next {
-    right: 24px;
-  }
-}
-
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1400px) {
   .slider__button {
     width: 38px;
     height: 38px;
@@ -91,18 +98,19 @@
     width: 22px;
     height: 22px;
   }
+
   .slider__button-prev {
-    left: 24px;
+    left: 0;
   }
-  
+
   .slider__button-next {
-    right: 24px;
+    right: 0;
   }
 
   .slider__pagination {
     bottom: 30px !important;
   }
-  
+
 }
 
 @media screen and (max-width: 767px) {
@@ -115,16 +123,17 @@
     width: 22px;
     height: 22px;
   }
+
   .slider__button-prev {
-    left: 15px;
+    left: 0;
   }
-  
+
   .slider__button-next {
-    right: 15px;
+    right: 0;
   }
 
   .slider__pagination {
     bottom: 30px !important;
   }
-  
+
 }

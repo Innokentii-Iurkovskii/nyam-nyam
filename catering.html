@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Нам-Ням</title>
+  <meta name="description" content="Доставка обедов в офис">
+  <meta name="keywords" content="доставка, еда, обеды, офис">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon.png">
+  <meta property="og:image" content="./images/preview.jpg">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body class="page">
+  <!-- Хедер -->
+  <header class="header" id="header">
+    <div class="header__nav">
+      <div class="header__box-nav box">
+        <!-- Десктоп навигация -->
+        <nav class="header__nav-links">
+          <ul class="header__nav-list list">
+            <li class="header__nav-item">
+              <!-- Ссылка с классом .header__nav-link_active указывающий на текущую страницу -->
+              <a href="/company/" class="header__nav-link header__nav-link_active link">Компания</a>
+              <!-- Конец ссылки с классом .header__nav-link_active указывающий на текущую страницу -->
+            </li>
+            <li class="header__nav-item">
+              <a href="/blog/" class="header__nav-link link">Блог</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/bonus/" class="header__nav-link link">Бонусная программа</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/delivery/" class="header__nav-link link">Доставка</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/catering/" class="header__nav-link link">Организация питания</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/reviews/" class="header__nav-link link">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/contacts/" class="header__nav-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Конец десктоп навигации -->
+        <!-- Десктоп социальные сети -->
+        <ul class="socials header__socials list">
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/telegram.svg" alt="Телеграм" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/skype.svg" alt="Скайп" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/mail.svg" alt="Почта" class="socials__icon">
+            </a>
+          </li>
+        </ul>
+        <!-- Конец социальных сетей -->
+        <!-- Десктоп профиль -->
+        <a href="#" class="header__login link">
+          <img class="header__login-icon" src="./images/profile.svg" alt="Личный кабинет">
+          <span class="header__login-text">Профиль</span>
+        </a>
+        <!-- Конец десктоп профиля -->
+      </div>
+    </div>
+    <div class="header__info">
+      <div class="box header__box-info">
+        <button type="button" class="header__burger button">
+          <img src="./images/burger.svg" alt="Открыть мобильное меню" class="header__burger-icon">
+        </button>
+        <a href="/" class="header__logo logo link">
+          <img src="./images/logo.svg" alt="Логотип Нам-Ням" class="header__logo-img logo__img">
+          <h2 class="header__logo-title title">
+            Доставка обедов в офис
+          </h2>
+        </a>
+        <div class="header__info-delicious">
+          <img src="./images/delicious-at-home.svg" alt="Вкусно по домашнему" class="header__info-delicious-img">
+          <p class="header__info-delicious-text">Вкусно по‑домашнему!</p>
+        </div>
+        <!-- Десктоп контакты -->
+        <div class="header__contacts">
+          <a href="tel:+74993946490" class="header__phone link">+7 499 394-64-90</a>
+          <span class="header__phone-separator">/</span>
+          <a href="tel:+79037750565" class="header__phone link">+7 903 775-05-65</a>
+          <a href="#" class="header__call-me-back link">Перезвоните мне</a>
+          <p class="header__schedule">пн-вс с 10:00 до 18:00</p>
+        </div>
+        <!-- Конец десктоп контактов -->
+        <!-- Мобильный профиль -->
+        <a href="#" class="header__login header__login_type_mobile link">
+          <img class="header__login-icon" src="./images/profile.svg" alt="Личный кабинет">
+        </a>
+        <!-- Конец мобильного профиля -->
+        <a href="#basket-popup" class="header__cart link">
+          <img src="./images/basket.svg" alt="Корзина" class="header__cart-img">
+          <span class="header__cart-value">
+            <span class="header__cart-count">3</span><span class="header__cart-separator"> / </span><span
+              class="header__cart-price">3200р.</span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="header__menu">
+      <button class="header__close-button button">
+        <img class="header__close-icon" src="./images/mobile-menu-close.svg" alt="Закрыть мобильное меню">
+      </button>
+      <div class="header__menu-box box">
+        <nav class="header__menu-links">
+          <ul class="header__menu-list list">
+            <li class="header__menu-item">
+              <!-- Ссылка с классом .header__menu-link_active указывающий на текущую страницу -->
+              <a href="#" class="header__menu-link header__menu-link_active link">
+                <img src="./images/main-menu.svg" alt="Основное меню" class="header__menu-icon">
+                <span class="header__menu-text">Основное меню</span>
+              </a>
+              <!-- Конец ссылки с классом .header__menu-link_active указывающий на текущую страницу -->
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">
+                <img src="./images/business-lunch.svg" alt="Бизнес-ланчи" class="header__menu-icon">
+                <span class="header__menu-text">Бизнес-ланчи</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">
+                <img src="./images/set-meals.svg" alt="Комплексные обеды" class="header__menu-icon">
+                <span class="header__menu-text">Комплексные обеды</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">
+                <img src="./images/holiday-menu.svg" alt="Праздничное меню" class="header__menu-icon">
+                <span class="header__menu-text">Праздничное меню</span>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">
+                <img src="./images/wholesalers-catalog.svg" alt="Каталог оптовика" class="header__menu-icon">
+                <span class="header__menu-text">Каталог оптовика</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Мобильная навигация -->
+        <nav class="header__nav-links">
+          <ul class="header__nav-list list">
+            <li class="header__nav-item">
+              <a href="/company/" class="header__nav-link link">Компания</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/blog/" class="header__nav-link link">Блог</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/bonus/" class="header__nav-link link">Бонусная программа</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/delivery/" class="header__nav-link link">Доставка</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/catering/" class="header__nav-link link">Организация питания</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/reviews/" class="header__nav-link link">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/contacts/" class="header__nav-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Конец мобильной навигации -->
+      </div>
+      <div class="header__wrapper">
+        <!-- Мобильные контакты -->
+        <div class="header__contacts">
+          <a href="tel:+74993946490" class="header__phone link">+7 499 394-64-90</a>
+          <a href="tel:+79037750565" class="header__phone link">+7 903 775-05-65</a>
+          <a href="#" class="header__call-me-back link">Перезвоните мне</a>
+          <p class="header__schedule">пн-вс с 10:00 до 18:00</p>
+        </div>
+        <!-- Конец мобильных контактов -->
+        <!-- Мобильные социальные сети -->
+        <ul class="socials header__socials list">
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/telegram.svg" alt="Телеграм" class="socials__icon">
+              <span class="socials__text">Telegram</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/skype.svg" alt="Скайп" class="socials__icon">
+              <span class="socials__text">Skype</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/mail.svg" alt="Почта" class="socials__icon">
+              <span class="socials__text">E-mail</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Конец мобильных социальных сетей -->
+      </div>
+    </div>
+  </header>
+  <!-- Конец хедера -->
+
+  <!-- Контент страницы -->
+  <main class="content">
+    <!-- Хлебные крошки и поделиться -->
+    <section class="breadcrumbs-share" aria-label="Хлебные крошки и поделиться">
+      <div class="box breadcrumbs-share__box">
+        <ul class="breadcrumbs list">
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link link">Корпоративное питание</a>
+          </li>
+        </ul>
+        <a href="#" class="share link">
+          <img class="share__icon" src="./images/share.svg" alt="Икнока поделиться">
+        </a>
+      </div>
+    </section>
+    <!-- Конец хлебных крошек и поделиться -->
+
+    <!-- Корпоративное питание -->
+    <section class="section catering">
+      <div class="box">
+        <h1 class="title title_type_default">Корпоративное питание</h1>
+        <p class="text">
+          Кейтеринг образовано от английского слова cater – "обслуживать, обеспечивать". Кейтеринговые компании
+          занимаются
+          доставкой питания в офисы, на предприятия, домой или на выездные события (выставки, фестивали). Благодаря
+          налаженной
+          структуре работы служб доставки кейтеринга многие компании полностью перешли на корпоративное питание прямо в
+          офисе.
+        </p>
+      </div>
+    </section>
+    <!-- Конец Корпоративное питание -->
+
+    <!-- Готовая еда на предприятиях -->
+    <section class="section catering">
+      <div class="box">
+        <h2 class="title title_type_default">Готовая еда на предприятиях</h2>
+        <p class="text">
+          Зачастую эта услуга – не роскошь, а необходимость:
+        </p>
+        <ul class="list list_type_accent">
+          <li>
+            Формат работы многих организаций просто не учитывает возможности наладить питание «на стороне». На стройке,
+            на
+            производственных предприятиях, при работах на улице часто нет возможности организовать столовую с
+            раздаточным пунктом.
+            Поблизости может не оказаться ни кафе, ни магазина – такое часто бывает не только в области, но и в Москве.
+          </li>
+          <li>
+            У многих сотрудников просто нет времени на продолжительные отлучки от рабочего места. Это касается врачей,
+            диспетчеров, операторов call-центров и сотрудников ресепшн, работников ремонтных служб.
+          </li>
+          <li>
+            Часто даже обычные менеджеры или руководители загружены настолько, что не могут уйти из офиса. А многие
+            предпочли бы
+            организовать обеденный перерыв по своему желанию.
+          </li>
+        </ul>
+        <p class="text">
+          В этом случае услуги по организации комплексных бизнес-обедов – спасение для всех сотрудников компании.
+        </p>
+        <ul class="catering__list list list_type_blog">
+          <li class="catering__item" style="background-image: url(./images/catering-image-1.jpg);">
+            <a href="#" class="catering__link link">
+              <span class="catering__text">Организация питания в офисе</span>
+            </a>
+          </li>
+          <li class="catering__item" style="background-image: url(./images/catering-image-2.jpg);">
+            <a href="#" class="catering__link link">
+              <span class="catering__text">Организация питания на праздниках</span>
+            </a>
+          </li>
+          <li class="catering__item" style="background-image: url(./images/catering-image-3.jpg);">
+            <a href="#" class="catering__link link">
+              <span class="catering__text">Организация питания на производстве</span>
+            </a>
+          </li>
+          <li class="catering__item" style="background-image: url(./images/catering-image-4.jpg);">
+            <a href="#" class="catering__link link">
+              <span class="catering__text">Организация питания рабочих</span>
+            </a>
+          </li>
+          <li class="catering__item" style="background-image: url(./images/catering-image-5.jpg);">
+            <a href="#" class="catering__link link">
+              <span class="catering__text">Организация питания работников</span>
+            </a>
+          </li>
+          <li class="catering__item" style="background-image: url(./images/catering-image-6.jpg);">
+            <a href="#" class="catering__link link">
+              <span class="catering__text">Организация питания в бизнес-центре</span>
+            </a>
+          </li>
+          <li class="catering__item" style="background-image: url(./images/catering-image-7.jpg);">
+            <a href="#" class="catering__link link">
+              <span class="catering__text">Организация питания на стройке</span>
+            </a>
+          </li>
+          <li class="catering__item" style="background-image: url(./images/catering-image-8.jpg);">
+            <a href="#" class="catering__link link">
+              <span class="catering__text">Организация питания на строительной площадке</span>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="button link catering__button button_size_medium">показать все</a>
+      </div>
+    </section>
+    <!-- Конец готовой еды на предприятиях -->
+
+    <!-- Заявка на корпоративное питание -->
+    <section class="section catering">
+      <div class="box">
+        <h2 class="title title_type_default">оформите заявку на корпоративное питание</h2>
+        <div class="catering__form-box">
+          <form action="#" name="catering-form" class="catering__form form form_type_default">
+            <label class="form__label">
+              <span class="form__input-title">Стоимость на человека*</span>
+              <input type="text" placeholder="Укажите стоимость" class="catering__input form__input" required>
+              <span class="catering__form-text_type_placeholder form__text-placeholder">руб.</span>
+            </label>
+            <label class="form__label">
+              <span class="form__input-title">Количество человек*</span>
+              <input type="text" placeholder="Укажите количество человек" class="catering__input form__input" required>
+            </label>
+            <label class="form__label">
+              <span class="form__input-title">Тип блюда</span>
+              <select name="food-type" class="form__select catering__input form__input">
+                <option value="0" disabled selected>Выберите тип блюда</option>
+                <option value="1">Пункт 1</option>
+                <option value="2">Пункт 2</option>
+                <option value="3">Пункт 3</option>
+                <option value="4">Пункт 4</option>
+                <option value="5">Пункт 5</option>
+              </select>
+            </label>
+            <label class="form__label">
+              <span class="form__input-title">Предпочтения по составу</span>
+              <select name="food-type" class="form__select catering__input form__input">
+                <option value="0" disabled selected>Укажите предпочтения по составу</option>
+                <option value="1">Пункт 1</option>
+                <option value="2">Пункт 2</option>
+                <option value="3">Пункт 3</option>
+                <option value="4">Пункт 4</option>
+                <option value="5">Пункт 5</option>
+              </select>
+            </label>
+            <label class="form__label">
+              <span class="form__input-title">Дополнительно</span>
+              <select name="food-type" class="form__select catering__input form__input">
+                <option value="0" disabled selected>Выберите тип питания и приборы</option>
+                <option value="1">Пункт 1</option>
+                <option value="2">Пункт 2</option>
+                <option value="3">Пункт 3</option>
+                <option value="4">Пункт 4</option>
+                <option value="5">Пункт 5</option>
+              </select>
+            </label>
+            <label class="form__label">
+              <span class="form__input-title">Дата доставки*</span>
+              <input type="text" placeholder="ДД.ММ.ГГГГ"
+                class="catering__calendar-input form__input form__input_type_calendar" required>
+              <span
+                class="catering__form-text_type_placeholder form__text-placeholder form__input_style_calendar"></span>
+            </label>
+            <label class="form__label">
+              <span class="form__input-title">Наименование организации</span>
+              <input type="text" placeholder="Укажите наименование вашей организации"
+                class="catering__input form__input">
+            </label>
+            <label class="form__label">
+              <span class="form__input-title">Контактное лицо*</span>
+              <input type="text" placeholder="Имя Фамилия" class="catering__input form__input" required>
+            </label>
+            <label class="form__label">
+              <span class="form__input-title">Телефон*</span>
+              <input type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="catering__input form__input" required>
+            </label>
+            <label class="form__label">
+              <span class="form__input-title">E-mail*</span>
+              <input type="email" placeholder="example@example.com" class="catering__input form__input" required>
+            </label>
+            <label class="form__label form__label_type_text-area">
+              <span class="form__input-title">Комментарий</span>
+              <textarea rows="1" placeholder="Укажите дополнительные пожелания к вашей заявке"
+                class="catering__input form__input form__textarea"></textarea>
+            </label>
+            <label class="catering__checkbox-wrapper form__checkbox-wrapper">
+              <input type="checkbox" class="catering__input form__input_type_checkbox form__input" required>
+              <span class="catering__checkbox-custom form__checkbox"></span>
+              <span class="catering__checkbox-text form__checkbox-text">Даю согласие на обработку моих персональных
+                данных.</span>
+            </label>
+            <input type="submit" value="Отправить" class="catering__button button button_size_medium form__input">
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Конец заявки на корпоративное питание -->
+
+    <!-- Форма обратной связи -->
+    <section class="manager">
+      <div class="box">
+        <div class="manager__box">
+          <form action="#" name="manager-form" class="manager__form form">
+            <h2 class="manager__title title title_type_default">Связаться с менеджером</h2>
+            <input type="text" placeholder="Имя*" class="manager__input manager__input_type_name form__input" required>
+            <input type="tel" placeholder="Телефон*" class="manager__input  manager__input_type_phone form__input"
+              required>
+            <label class="manager__checkbox-wrapper">
+              <input type="checkbox" class="manager__input manager__input_type_checkbox form__input" required>
+              <span class="manager__checkbox-custom"></span>
+              <span class="manager__checkbox-text">Даю согласие на обработку моих персональных данных.</span>
+            </label>
+            <input type="submit" value="Отправить" class="manager__button button button_size_medium form__input">
+          </form>
+          <img src="./images/dishes-form.png" alt="Фоновое изображение формы" class="manager__image">
+        </div>
+      </div>
+    </section>
+    <!-- Конец формы обратной связи -->
+  </main>
+  <!-- Конец контента страницы -->
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="box footer__box">
+        <div class="footer__top-info">
+          <div class="footer__contacts">
+            <a href="tel:+74993946490" class="footer__phone link">+7 499 394-64-90</a>
+            <a href="tel:+79037750565" class="footer__phone link">+7 903 775-05-65</a>
+            <p class="footer__schedule">пн-вс с 10:00 до 18:00</p>
+            <a href="mailto:catering@nam-nyam.ru" class="footer__mail link">catering@nam-nyam.ru</a>
+          </div>
+          <ul class="socials footer__socials list">
+            <li class="socials__item">
+              <a href="#" class="socials__link link">
+                <img src="./images/telegram.svg" alt="Телеграм" class="socials__icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link link">
+                <img src="./images/skype.svg" alt="Скайп" class="socials__icon">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link link">
+                <img src="./images/mail.svg" alt="Почта" class="socials__icon">
+              </a>
+            </li>
+          </ul>
+          <div class="footer__slider-wrapper slider-box">
+            <div class="swiper slider footer__slider">
+              <div class="swiper-wrapper slider__wrapper">
+                <div class="swiper-slide slider__slide">
+                  <span class="footer__address">
+                    <span>Адрес:</span>
+                    109202, г. Москва, шоссе Фрезер, д. 17А, стр. 5 (м. Авиамоторная)
+                  </span>
+                </div>
+                <div class="swiper-slide">
+                  <span class="footer__address">
+                    <span>Адрес:</span>
+                    109202, г. Москва, шоссе Фрезер, д. 17А, стр. 5 (м. Авиамоторная)
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__button slider__button_size_small slider__button-prev">
+              <svg class="slider__button-icon slider__button-prev-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+                width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+                <g fill="#CBD3D9" clip-path="url(#a)">
+                  <path
+                    d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                  <path
+                    d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+                </g>
+                <defs>
+                  <clipPath>
+                    <path fill="#fff" d="M50 0v50H0V0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="slider__button slider__button_size_small slider__button-next">
+              <svg class="slider__button-icon slider__button-next-icon" xmlns="http://www.w3.org/2000/svg" height="100%"
+                width="100%" viewBox="0 0 50 50" preserveAspectRatio="none" fill="none">
+                <g fill="#CBD3D9" clip-path="url(#a)">
+                  <path
+                    d="M25 50c13.785 0 25-11.215 25-25S38.785 0 25 0 0 11.215 0 25s11.215 25 25 25Zm0-47.502c12.408 0 22.502 10.094 22.502 22.502S37.408 47.502 25 47.502 2.498 37.408 2.498 25 12.592 2.498 25 2.498Z" />
+                  <path
+                    d="m13.255 25.887 7.024 7.025c.49.49 1.275.49 1.764 0 .49-.49.49-1.275 0-1.764l-4.894-4.894h18.71a1.253 1.253 0 1 0 0-2.508h-18.7l4.894-4.894c.49-.49.49-1.275 0-1.764a1.243 1.243 0 0 0-1.764 0l-7.024 7.025c-.245.245-.367.56-.367.887 0 .326.112.642.357.887Z" />
+                </g>
+                <defs>
+                  <clipPath>
+                    <path fill="#fff" d="M50 0v50H0V0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <h3 class="footer__title">Каталог продукции</h3>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Багеты и бургеры</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Блины с начинками</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Сэндвичи</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Кулинария в упаковке</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Весовые салаты</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Выпечка в групповой упаковке</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Завтраки</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Готовые вторые блюда</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Салаты 300 г</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Салаты и закуски</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Штучная выпечка</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <h3 class="footer__title">Каталог продукции</h3>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Багеты и бургеры</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Блины с начинками</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Сэндвичи</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Кулинария в упаковке</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Весовые салаты</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Выпечка в групповой упаковке</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Завтраки</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Готовые вторые блюда</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link link">Салаты и закуски</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__info">
+          <ul class="footer__pay-list list">
+            <li class="footer__pay-item">
+              <img src="./images/yandex.svg" alt="Яндекс деньги" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/visa.svg" alt="Виза" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/master-card.svg" alt="Мастер Кард" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/maestro.svg" alt="Маестро" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/sberbank-icon.svg" alt="Сбербанк" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/qiwi.svg" alt="Киви" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/robokassa.svg" alt="Робокасса" class="footer__pay-icon">
+            </li>
+            <li class="footer__pay-item">
+              <img src="./images/mir.svg" alt="Мир" class="footer__pay-icon">
+            </li>
+          </ul>
+          <form action="#" name="subscribe-form" class="footer__form form">
+            <input type="email" placeholder="Ваш e-mail" class="footer__input form__input">
+            <input type="submit" value="Подписаться" class="footer__button button button_size_small">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="box footer__box">
+      <div class="footer__bot">
+        <a href="/" class="footer__logo logo link">
+          <img src="./images/logo-footer.svg" alt="Логотип Нам-Ням" class="footer__logo-img logo__img">
+          <p class="footer__logo-text">
+            2004–2022 © «Нам-Ням» Доставка обедов в офис
+          </p>
+        </a>
+        <ul class="footer__bot-list list">
+          <li class="footer__bot-item">
+            <a href="#" class="footer__bot-link link">Стандарты качества</a>
+          </li>
+          <li class="footer__bot-item">
+            <a href="#" class="footer__bot-link link">Политика конфеденциальности</a>
+          </li>
+          <li class="footer__bot-item">
+            <a href="#" class="footer__bot-link link">Политика возврата</a>
+          </li>
+        </ul>
+        <ul class="socials footer__bot-socials list">
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/vk.svg" alt="ВКонтакте" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/youtube.svg" alt="Ютуб" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/ok.svg" alt="Одноклассники" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link link">
+              <img src="./images/instagram.svg" alt="Инстаграм" class="socials__icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="#header" class="up-button link">
+      <img src="./images/arrow-up.svg" alt="Наверх" class="up-icon">
+      <span class="up-text">Наверх</span>
+    </a>
+  </footer>
+  <!-- Конец футера -->
+
+  <!-- Попап корзины каталога -->
+  <div class="basket-popup catalog__basket mfp-hide" id="basket-popup">
+    <div class="basket-popup__info catalog__basket-info">
+      <div class="basket-popup__box catalog__basket-box">
+        <p class="basket-popup__date catalog__basket-date">Заказ на 13.04.2023</p>
+        <p class="basket-popup__time catalog__basket-time">Принимается до 17:00</p>
+      </div>
+    </div>
+    <div class="basket-popup__day catalog__basket-day">
+      <div class="basket-popup__box catalog__basket-box">
+        <button type="button"
+          class="basket-popup__arrow basket-popup__arrow_type_prev catalog__basket-arrow catalog__basket-arrow_type_prev button"></button>
+        <ul class="basket-popup__list catalog__basket-list list">
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">ПН</a>
+          </li>
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">ВТ</a>
+          </li>
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">СР</a>
+          </li>
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">ЧТ</a>
+          </li>
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">ПТ</a>
+          </li>
+          <!-- Активный элемент с классом .basket-popup__link_active -->
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link basket-popup__link_active catalog__basket-link link">СБ</a>
+          </li>
+          <!-- Конец активного элемента с классом .basket-popup__link_active -->
+          <li class="basket-popup__item catalog__basket-item">
+            <a href="#" class="basket-popup__link catalog__basket-link link">ВС</a>
+          </li>
+        </ul>
+        <button type="button"
+          class="basket-popup__arrow basket-popup__arrow_type_next catalog__basket-arrow catalog__basket-arrow_type_next button"></button>
+      </div>
+    </div>
+    <div class="basket-popup__products catalog__basket-products">
+      <div class="basket-popup__box catalog__basket-box">
+        <div class="basket-popup__product catalog__basket-product">
+          <p class="basket-popup__section-name basket-section-name">Комплексные обеды</p>
+          <ul class="basket-popup__product-list catalog__basket-product-list list">
+            <li class="basket-popup__product-item catalog__basket-product-item">
+              <div class="basket-popup__product-info catalog__basket-product-info">
+                <p class="basket-popup__product-name catalog__basket-product-name">Комплекс БК</p>
+                <button type="button"
+                  class="basket-popup__product-remove catalog__basket-product-remove button"></button>
+              </div>
+              <div class="order basket-popup__container catalog__basket-container">
+                <div
+                  class="order__quantity-container basket-popup__quantity-container catalog__basket-quantity-container">
+                  <button type="button" class="order__minus basket-popup__minus catalog__basket-minus button"></button>
+                  <input type="number" min="0" max="999"
+                    class="order__quantity basket-popup__quantity catalog__basket-quantity" value="0">
+                  <button type="button" class="order__plus basket-popup__plus catalog__basket-plus button"></button>
+                </div>
+                <p class="basket-popup__product-price catalog__basket-product-price">138 руб.</p>
+              </div>
+            </li>
+            <li class="basket-popup__product-item catalog__basket-product-item">
+              <div class="basket-popup__product-info catalog__basket-product-info">
+                <p class="basket-popup__product-name catalog__basket-product-name">Комплекс БВ</p>
+                <button type="button"
+                  class="basket-popup__product-remove catalog__basket-product-remove button"></button>
+              </div>
+              <div class="order basket-popup__container catalog__basket-container">
+                <div
+                  class="order__quantity-container basket-popup__quantity-container catalog__basket-quantity-container">
+                  <button type="button" class="order__minus basket-popup__minus catalog__basket-minus button"></button>
+                  <input type="number" min="0" max="999"
+                    class="order__quantity basket-popup__quantity catalog__basket-quantity" value="0">
+                  <button type="button" class="order__plus basket-popup__plus catalog__basket-plus button"></button>
+                </div>
+                <p class="basket-popup__product-price catalog__basket-product-price">283 руб.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="basket-popup__product catalog__basket-product">
+          <p class="basket-popup__section-name basket-section-name">Завтраки</p>
+          <ul class="basket-popup__product-list catalog__basket-product-list list">
+            <li class="basket-popup__product-item catalog__basket-product-item">
+              <div class="basket-popup__product-info catalog__basket-product-info">
+                <p class="basket-popup__product-name catalog__basket-product-name">Бутерброд с семгой</p>
+                <button type="button"
+                  class="basket-popup__product-remove catalog__basket-product-remove button"></button>
+              </div>
+              <div class="order basket-popup__container catalog__basket-container">
+                <div
+                  class="order__quantity-container basket-popup__quantity-container catalog__basket-quantity-container">
+                  <button type="button" class="order__minus basket-popup__minus catalog__basket-minus button"></button>
+                  <input type="number" min="0" max="999"
+                    class="order__quantity basket-popup__quantity catalog__basket-quantity" value="0">
+                  <button type="button" class="order__plus basket-popup__plus catalog__basket-plus button"></button>
+                </div>
+                <p class="basket-popup__product-price catalog__basket-product-price">250 руб.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="basket-popup__total catalog__basket-total">
+      <div class="basket-popup__box catalog__basket-box">
+        <p class="basket-popup__total-price catalog__basket-total-price">Сумма: 671 руб.</p>
+        <p class="basket-popup__total-required catalog__basket-total-required">До заказа: 329 руб.</p>
+        <p class="basket-popup__total-count catalog__basket-total-count">Кол-во блюд: 4</p>
+        <button type="button"
+          class="basket-popup__total-button catalog__basket-total-button button button_size_small">Оформить</button>
+      </div>
+    </div>
+  </div>
+  <!-- Конец попапа корзины каталога -->
+
+  <!-- Попап карточки товара -->
+  <div class="card-popup mfp-hide" id="card-popup">
+    <h2 class="card-popup__title title title_type_default">Чахохбили с курицей (130 гр)</h2>
+    <img src="./images/chakhokhbili.jpg" alt="Чахохбили" class="card-popup__image">
+    <ul class="card-popup__list list">
+      <li class="card-popup__item">
+        <span class="card-popup__property">Состав: </span>
+        <span class="card-popup__text">Курица, лук, морковь, помидоры, масло подсолнечное, соль, укроп, чеснок,
+          перец</span>
+      </li>
+      <li class="card-popup__item">
+        <span class="card-popup__property">Макро и микроэлементы: </span>
+        <span class="card-popup__text">Ca, Mg, Mn, Fe, Na, P, Zn</span>
+      </li>
+      <li class="card-popup__item">
+        <span class="card-popup__property">Витамины: </span>
+        <span class="card-popup__text">A, B1, B2, B6, B9, C, PP</span>
+      </li>
+      <li class="card-popup__item">
+        <span class="card-popup__property">Энергетическая ценность: </span>
+        <span class="card-popup__text">365 ккал; Жиры: 25.3, Белки: 29.4, Углеводы: 2.7</span>
+      </li>
+    </ul>
+    <div class="card-popup__order order">
+      <div class="order__quantity-container">
+        <button type="button" class="order__minus button"></button>
+        <input type="number" min="0" max="999" class="order__quantity" value="0">
+        <button type="button" class="order__plus button"></button>
+      </div>
+      <button type="button" class="order__basket button button_size_small">
+        <span class="order__basket-text">Заказать</span>
+      </button>
+    </div>
+  </div>
+  <!-- Конец попапа карточки товара -->
+
+  <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+  <script src="./vendor/magnific-popup/jquery.magnific-popup.js"></script>
+  <script src="./vendor/swiper/swiper.js"></script>
+  <script src="./vendor/calendar/calendar.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
